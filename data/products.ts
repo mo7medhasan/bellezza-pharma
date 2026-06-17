@@ -1,0 +1,2590 @@
+import type { Product } from "@/types/product";
+
+export const products: Product[] = [
+  {
+    id: "1",
+    slug: "treo-serum",
+    nameAr: "تريو سيروم",
+    nameEn: "TREO Serum",
+    category: "serum",
+    categoryLabel: "Serum",
+    categoryLabelAr: "سيروم",
+    volume: "50 ml",
+    featured: true,
+    shortDescription:
+      "Advanced triple-action serum for radiant, youthful skin with deep hydration and brightening effects.",
+    shortDescriptionAr:
+      "سيروم متقدم ثلاثي التأثير للبشرة المشرقة الشبابية مع ترطيب عميق وتأثير إضاءة.",
+    longDescription:
+      "TREO Serum is a revolutionary triple-action skincare formula that combines the power of three essential complexes to transform your skin. Infused with Hyaluronic Acid for deep hydration, Vitamin C for brightening and antioxidant protection, and Retinol for anti-aging benefits, TREO Serum works synergistically to deliver visible results from the first application. Developed by dermatologists and tested under clinical conditions, this serum penetrates deep into the skin layers to address hyperpigmentation, fine lines, dullness, and uneven texture. Suitable for all skin types, TREO Serum is your complete skincare solution in one bottle.",
+    longDescriptionAr:
+      "تريو سيروم هو تركيبة رعاية البشرة ثلاثية التأثير الثورية التي تجمع قوة ثلاثة مركبات أساسية لتحويل بشرتك. مغني بحمض الهيالورونيك للترطيب العميق، وفيتامين C للتفتيح وحماية مضادة للأكسدة، والريتينول للفوائد المضادة للشيخوخة. يعمل تريو سيروم بشكل تآزري لتقديم نتائج مرئية منذ التطبيق الأول. تم تطويره من قبل أطباء الجلد واختباره في ظروف سريرية، يخترق هذا السيروم طبقات الجلد العميقة لمعالجة فرط التصبغ والخطوط الدقيقة وانعدام الإشراق وعدم انتظام الملمس.",
+    tags: ["anti-aging", "brightening", "hydrating", "retinol", "vitamin-c"],
+    tagsAr: [
+      "مضاد للشيخوخة",
+      "تفتيح",
+      "ترطيب",
+      "ريتينول",
+      "فيتامين سي",
+    ],
+    benefits: [
+      "Deep hydration lasting up to 72 hours",
+      "Reduces fine lines and wrinkles by up to 30%",
+      "Brightens and evens skin tone",
+      "Boosts collagen production",
+      "Provides antioxidant protection",
+      "Improves skin texture and elasticity",
+      "Minimizes pores appearance",
+    ],
+    benefitsAr: [
+      "ترطيب عميق يدوم حتى 72 ساعة",
+      "يقلل الخطوط الدقيقة والتجاعيد بنسبة تصل إلى 30%",
+      "يفتح ويوحد لون البشرة",
+      "يعزز إنتاج الكولاجين",
+      "يوفر حماية مضادة للأكسدة",
+      "يحسن ملمس البشرة ومرونتها",
+      "يقلل ظهور المسام",
+    ],
+    ingredients: [
+      {
+        id: "ing-1",
+        nameAr: "حمض الهيالورونيك",
+        nameEn: "Hyaluronic Acid",
+        description:
+          "A powerful humectant naturally found in the skin that holds up to 1000x its weight in water.",
+        benefits: [
+          "Deep hydration",
+          "Plumps skin",
+          "Reduces fine lines",
+          "Improves elasticity",
+        ],
+        mechanism:
+          "Binds water molecules in the dermis and epidermis, creating a moisture reservoir that keeps skin plump and hydrated.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-2",
+        nameAr: "فيتامين سي",
+        nameEn: "Vitamin C (Ascorbic Acid)",
+        description:
+          "A potent antioxidant vitamin that brightens skin and stimulates collagen synthesis.",
+        benefits: [
+          "Brightening",
+          "Antioxidant protection",
+          "Collagen boost",
+          "Even skin tone",
+        ],
+        mechanism:
+          "Neutralizes free radicals and inhibits melanin production by blocking tyrosinase enzyme activity.",
+        concentration: "15%",
+      },
+      {
+        id: "ing-3",
+        nameAr: "ريتينول",
+        nameEn: "Retinol",
+        description:
+          "A vitamin A derivative that accelerates cell turnover and stimulates collagen production.",
+        benefits: [
+          "Anti-aging",
+          "Reduces wrinkles",
+          "Refines pores",
+          "Improves texture",
+        ],
+        mechanism:
+          "Binds to retinoid receptors in skin cells, accelerating cellular renewal and collagen synthesis.",
+        concentration: "0.5%",
+      },
+      {
+        id: "ing-4",
+        nameAr: "نياسيناميد",
+        nameEn: "Niacinamide",
+        description:
+          "Vitamin B3 that regulates sebum production and reduces hyperpigmentation.",
+        benefits: ["Pore minimizing", "Oil control", "Brightening", "Barrier repair"],
+        mechanism:
+          "Inhibits melanosome transfer to keratinocytes and strengthens the skin barrier by boosting ceramide production.",
+        concentration: "5%",
+      },
+    ],
+    uses: [
+      "Hyperpigmentation and dark spots",
+      "Fine lines and early wrinkles",
+      "Dull and tired-looking skin",
+      "Uneven skin texture",
+      "Loss of firmness and elasticity",
+      "Enlarged pores",
+    ],
+    usesAr: [
+      "فرط التصبغ والبقع الداكنة",
+      "الخطوط الدقيقة والتجاعيد المبكرة",
+      "البشرة الباهتة والمتعبة",
+      "ملمس البشرة غير المتساوي",
+      "فقدان التماسك والمرونة",
+      "المسام المتضخمة",
+    ],
+    directions: [
+      "Cleanse your face thoroughly before application",
+      "Apply 3-4 drops to fingertips",
+      "Gently press and massage into face, neck, and décolletage",
+      "Allow to absorb for 2-3 minutes before applying moisturizer",
+      "Use morning and evening for best results",
+      "Always follow with SPF 30+ sunscreen in the morning",
+    ],
+    directionsAr: [
+      "نظفي وجهك جيداً قبل التطبيق",
+      "ضعي 3-4 قطرات على أطراف الأصابع",
+      "اضغطي وتدليكي بلطف على الوجه والرقبة ومنطقة الديكولتيه",
+      "اتركيه يمتص لمدة 2-3 دقائق قبل تطبيق المرطب",
+      "استخدمي صباحاً ومساءً للحصول على أفضل النتائج",
+      "اتبعي دائماً بكريم واقٍ من الشمس بعامل 30+ في الصباح",
+    ],
+    warnings: [
+      "For external use only",
+      "Avoid contact with eyes. If contact occurs, rinse immediately with water",
+      "Perform a patch test before first use",
+      "Not recommended for pregnant or breastfeeding women without medical consultation",
+      "Keep out of reach of children",
+      "Discontinue use if irritation or adverse reaction occurs",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "تجنبي ملامسة العينين. في حالة حدوث ذلك، اشطفي فوراً بالماء",
+      "أجري اختبار تحمل قبل الاستخدام الأول",
+      "غير موصى بها للحوامل أو المرضعات دون استشارة طبية",
+      "احفظي بعيداً عن متناول الأطفال",
+      "أوقفي الاستخدام في حالة حدوث تهيج أو تفاعل سلبي",
+    ],
+    sideEffects: [
+      "Mild tingling or redness upon first use (normal)",
+      "Skin sensitivity to sun may increase with retinol use",
+      "Very rarely: allergic reaction in sensitive individuals",
+    ],
+    sideEffectsAr: [
+      "وخز خفيف أو احمرار عند الاستخدام الأول (طبيعي)",
+      "قد تزداد حساسية البشرة للشمس مع استخدام الريتينول",
+      "نادراً جداً: تفاعل تحسسي لدى الأفراد الحساسين",
+    ],
+    storage: [
+      "Store in a cool, dry place below 25°C",
+      "Keep away from direct sunlight",
+      "Keep tightly closed after use",
+      "Do not freeze",
+    ],
+    storageAr: [
+      "يحفظ في مكان بارد وجاف أقل من 25 درجة مئوية",
+      "يُبعد عن أشعة الشمس المباشرة",
+      "أغلقي بإحكام بعد الاستخدام",
+      "لا تجمدي",
+    ],
+    faqs: [
+      {
+        question: "Can I use TREO Serum daily?",
+        questionAr: "هل يمكنني استخدام تريو سيروم يومياً؟",
+        answer:
+          "Yes, TREO Serum is formulated for daily use, both morning and evening. If you have sensitive skin, start with once daily at night and gradually increase to twice daily.",
+        answerAr:
+          "نعم، تريو سيروم مصنوع للاستخدام اليومي، صباحاً ومساءً. إذا كانت بشرتك حساسة، ابدئي بمرة واحدة يومياً في الليل وزيدي تدريجياً إلى مرتين يومياً.",
+      },
+      {
+        question: "When will I see results?",
+        questionAr: "متى سأرى النتائج؟",
+        answer:
+          "Most users notice improved hydration and radiance within 1-2 weeks. Significant improvements in fine lines and pigmentation are typically visible after 4-8 weeks of consistent use.",
+        answerAr:
+          "تلاحظ معظم المستخدمات تحسناً في الترطيب والإشراق خلال 1-2 أسبوع. التحسينات الملحوظة في الخطوط الدقيقة والتصبغ تكون مرئية عادةً بعد 4-8 أسابيع من الاستخدام المنتظم.",
+      },
+      {
+        question: "Is TREO Serum suitable for sensitive skin?",
+        questionAr: "هل تريو سيروم مناسب للبشرة الحساسة؟",
+        answer:
+          "TREO Serum is formulated for all skin types. For sensitive skin, we recommend starting with a patch test and introducing gradually.",
+        answerAr:
+          "تريو سيروم مصنوع لجميع أنواع البشرة. للبشرة الحساسة، نوصي بالبدء باختبار تحمل وإدخاله تدريجياً.",
+      },
+    ],
+    relatedProducts: ["pedro-serum-150", "pedro-lightening-cream", "jackstril-facial-wash"],
+    discount: {
+      percentage: 20,
+      specialOffer: "Buy 2 Get 1 FREE + Free Shipping",
+      specialOfferAr: "اشتري 2 واحصلي على 1 مجاناً + شحن مجاني",
+      bonusProducts: ["Bellezza Vitamin E Capsules", "Travel-size moisturizer"],
+      campaignDetails:
+        "Limited time offer. Valid for orders placed through our authorized distributors. Offer valid while stocks last.",
+      campaignDetailsAr:
+        "عرض لفترة محدودة. صالح للطلبات المقدمة من خلال موزعينا المعتمدين. العرض صالح حتى نفاد المخزون.",
+      originalPrice: "350 EGP",
+      discountedPrice: "280 EGP",
+    },
+    marketingContent:
+      "Transform your skincare routine with TREO Serum — the ultimate triple-action formula trusted by dermatologists. Visible results. Real science.",
+    marketingContentAr:
+      "حوّلي روتين العناية ببشرتك مع تريو سيروم — التركيبة ثلاثية التأثير المثلى التي يثق بها أطباء الجلد. نتائج مرئية. علم حقيقي.",
+    medicalContent:
+      "Clinically tested formulation combining 15% Vitamin C, 2% Hyaluronic Acid, and 0.5% Retinol. pH optimized for maximum efficacy and skin compatibility.",
+  },
+  {
+    id: "2",
+    slug: "pedro-serum-150",
+    nameAr: "بيدرو سيروم 150 مل",
+    nameEn: "Pedro Serum 150 ml",
+    category: "serum",
+    categoryLabel: "Serum",
+    categoryLabelAr: "سيروم",
+    volume: "150 ml",
+    featured: true,
+    shortDescription:
+      "Premium hair and scalp serum enriched with Panthenol and biotin for stronger, shinier hair.",
+    shortDescriptionAr:
+      "سيروم متميز للشعر وفروة الرأس مع البانثينول والبيوتين لشعر أقوى وأكثر لمعاناً.",
+    longDescription:
+      "Pedro Serum 150ml is a professional-grade hair serum formulated to address the most common hair concerns: hair loss, thinning, dullness, and breakage. Enriched with Panthenol (Pro-Vitamin B5), Biotin, Keratin, and Argan Oil, this serum nourishes each hair strand from root to tip, fortifying the hair shaft and stimulating the scalp. The advanced microencapsulation technology ensures sustained release of active ingredients, delivering long-lasting benefits. Regular use transforms damaged, lackluster hair into thick, vibrant, and luminous locks.",
+    longDescriptionAr:
+      "بيدرو سيروم 150مل هو سيروم شعر من الدرجة الاحترافية مصنوع لمعالجة أكثر مشاكل الشعر شيوعاً: تساقط الشعر والترقق والباهتة والكسر. مغني بالبانثينول (البروفيتامين B5) والبيوتين والكيراتين وزيت الأرغان، يغذي هذا السيروم كل خصلة شعر من الجذر إلى الأطراف، مما يعزز عمود الشعر ويحفز فروة الرأس.",
+    tags: ["hair-growth", "anti-breakage", "shine", "panthenol", "biotin"],
+    tagsAr: ["نمو الشعر", "مضاد للكسر", "لمعان", "بانثينول", "بيوتين"],
+    benefits: [
+      "Reduces hair loss by up to 40%",
+      "Strengthens hair shaft and reduces breakage",
+      "Adds intense shine and luminosity",
+      "Nourishes and moisturizes the scalp",
+      "Promotes healthy hair growth",
+      "Smooths frizz and tames flyaways",
+      "Protects against heat damage",
+    ],
+    benefitsAr: [
+      "يقلل تساقط الشعر بنسبة تصل إلى 40%",
+      "يقوي عمود الشعر ويقلل الكسر",
+      "يضيف لمعاناً وإضاءة مكثفة",
+      "يغذي ويرطب فروة الرأس",
+      "يعزز نمو الشعر الصحي",
+      "يلين الشعر المجعد ويروض الشعر المتطاير",
+      "يحمي من أضرار الحرارة",
+    ],
+    ingredients: [
+      {
+        id: "ing-5",
+        nameAr: "بانثينول (البروفيتامين B5)",
+        nameEn: "Panthenol (Pro-Vitamin B5)",
+        description:
+          "A provitamin that penetrates the hair shaft and converts to Pantothenic Acid, deeply nourishing hair.",
+        benefits: ["Deep conditioning", "Adds shine", "Reduces breakage", "Scalp health"],
+        mechanism:
+          "Penetrates the hair cuticle and cortex, binding moisture and swelling the hair fiber to increase thickness.",
+        concentration: "5%",
+      },
+      {
+        id: "ing-6",
+        nameAr: "بيوتين",
+        nameEn: "Biotin (Vitamin B7)",
+        description:
+          "Essential B vitamin that plays a critical role in keratin infrastructure and hair growth.",
+        benefits: ["Hair growth", "Strengthening", "Reduces thinning"],
+        mechanism:
+          "Supports keratin production and metabolic functions essential for hair follicle health.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-7",
+        nameAr: "كيراتين",
+        nameEn: "Hydrolyzed Keratin",
+        description:
+          "Structural protein that fills in damaged areas of the hair shaft for smoother, stronger hair.",
+        benefits: ["Repair", "Smoothing", "Strength", "Frizz control"],
+        mechanism:
+          "Fills in gaps along the hair cuticle layer, creating a protective coating that smooths and strengthens.",
+        concentration: "3%",
+      },
+      {
+        id: "ing-8",
+        nameAr: "زيت الأرغان",
+        nameEn: "Argan Oil",
+        description:
+          "Rich in Vitamin E and fatty acids, this 'liquid gold' deeply conditions and adds magnificent shine.",
+        benefits: ["Shine", "Conditioning", "Frizz control", "Heat protection"],
+        mechanism:
+          "Coats the hair cuticle with fatty acids and Vitamin E, creating a protective barrier and reflecting light.",
+      },
+    ],
+    uses: [
+      "Hair loss and thinning",
+      "Damaged and over-processed hair",
+      "Dry and brittle hair",
+      "Frizzy and unmanageable hair",
+      "Scalp dryness and irritation",
+      "Lack of shine and vitality",
+    ],
+    usesAr: [
+      "تساقط الشعر والترقق",
+      "الشعر التالف والمعالج بإفراط",
+      "الشعر الجاف والهش",
+      "الشعر المجعد وصعب الإدارة",
+      "جفاف فروة الرأس وتهيجها",
+      "نقص اللمعان والحيوية",
+    ],
+    directions: [
+      "Wash hair with Pedro Shampoo for optimal results",
+      "Towel dry hair until damp",
+      "Apply 5-8 pumps evenly through lengths and ends",
+      "For scalp treatment: massage 2-3 pumps directly to scalp",
+      "Do not rinse — leave-in formula",
+      "Style as usual",
+    ],
+    directionsAr: [
+      "اغسلي الشعر ببيدرو شامبو للحصول على نتائج مثلى",
+      "جففي الشعر بالمنشفة حتى يصبح رطباً",
+      "ضعي 5-8 ضخات بالتساوي على الأطراف",
+      "لعلاج فروة الرأس: دلكي 2-3 ضخات مباشرة على فروة الرأس",
+      "لا تشطفي — تركيبة تُترك في الشعر",
+      "صففي شعرك كالمعتاد",
+    ],
+    warnings: [
+      "For external use only",
+      "Avoid contact with eyes",
+      "Not for use on children under 3 years",
+      "Keep out of reach of children",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "تجنبي ملامسة العينين",
+      "لا تُستخدم للأطفال دون سن 3 سنوات",
+      "احفظي بعيداً عن متناول الأطفال",
+    ],
+    sideEffects: [
+      "Rarely: scalp sensitivity in individuals with specific allergies",
+      "Patch test recommended before first use",
+    ],
+    sideEffectsAr: [
+      "نادراً: حساسية فروة الرأس لدى الأفراد ذوي الحساسيات المحددة",
+      "يُوصى باختبار تحمل قبل الاستخدام الأول",
+    ],
+    storage: [
+      "Store below 30°C in a dry place",
+      "Keep away from direct sunlight",
+    ],
+    storageAr: ["يحفظ أقل من 30 درجة مئوية في مكان جاف", "يُبعد عن أشعة الشمس المباشرة"],
+    faqs: [
+      {
+        question: "How often should I use Pedro Serum?",
+        questionAr: "كم مرة يجب أن أستخدم بيدرو سيروم؟",
+        answer:
+          "For best results, use Pedro Serum after every wash, typically 3-4 times per week. For intensive treatment, use daily.",
+        answerAr:
+          "للحصول على أفضل النتائج، استخدمي بيدرو سيروم بعد كل غسيل، عادةً 3-4 مرات في الأسبوع. للعلاج المكثف، استخدميه يومياً.",
+      },
+      {
+        question: "Can I use it on colored hair?",
+        questionAr: "هل يمكنني استخدامه على الشعر المصبوغ؟",
+        answer:
+          "Yes! Pedro Serum is safe and beneficial for colored, bleached, and chemically treated hair.",
+        answerAr:
+          "نعم! بيدرو سيروم آمن ومفيد للشعر المصبوغ والمبيض والمعالج كيميائياً.",
+      },
+    ],
+    relatedProducts: ["pedro-serum-75", "pedro-shampoo", "strands-conditioner"],
+    discount: {
+      percentage: 15,
+      specialOffer: "15% OFF + Free Pedro Shampoo Travel Size",
+      specialOfferAr: "خصم 15% + بيدرو شامبو حجم سفر مجاناً",
+      bonusProducts: ["Pedro Shampoo Travel Size 50ml"],
+      campaignDetails:
+        "Purchase any Pedro hair care product and receive a complimentary travel-size item.",
+      campaignDetailsAr:
+        "اشتري أي منتج من مجموعة بيدرو للعناية بالشعر واحصلي على هدية مجانية بحجم السفر.",
+      originalPrice: "285 EGP",
+      discountedPrice: "242 EGP",
+    },
+    marketingContent:
+      "Professional salon results at home. Pedro Serum's advanced formula gives you the hair you've always dreamed of.",
+    marketingContentAr:
+      "نتائج الصالون الاحترافية في منزلك. تركيبة بيدرو سيروم المتقدمة تمنحك الشعر الذي كنت دائماً تحلمين به.",
+    medicalContent:
+      "Dermatologically tested. Contains clinically proven concentrations of Panthenol 5%, Biotin 2%, and Hydrolyzed Keratin 3%.",
+  },
+  {
+    id: "3",
+    slug: "pedro-serum-75",
+    nameAr: "بيدرو سيروم 75 مل",
+    nameEn: "Pedro Serum 75 ml",
+    category: "serum",
+    categoryLabel: "Serum",
+    categoryLabelAr: "سيروم",
+    volume: "75 ml",
+    shortDescription:
+      "Same premium Pedro Serum formula in a convenient travel-friendly 75ml size.",
+    shortDescriptionAr:
+      "نفس تركيبة بيدرو سيروم المتميزة بحجم 75 مل المناسب للسفر.",
+    longDescription:
+      "Pedro Serum 75ml contains the exact same professional-grade formula as our 150ml version, packaged in a convenient travel-friendly size. Perfect for those who want to try the Pedro Serum experience or maintain their hair care routine on the go. The compact size meets airline carry-on regulations, making it the ideal companion for business travelers and beauty enthusiasts alike.",
+    longDescriptionAr:
+      "يحتوي بيدرو سيروم 75مل على نفس التركيبة الاحترافية تماماً مثل إصدار 150مل، معبأة بحجم مناسب للسفر. مثالي لمن يريدون تجربة بيدرو سيروم أو الحفاظ على روتين العناية بالشعر أثناء التنقل.",
+    tags: ["travel-size", "hair-growth", "anti-breakage", "shine"],
+    tagsAr: ["حجم سفر", "نمو الشعر", "مضاد للكسر", "لمعان"],
+    benefits: [
+      "Compact travel-friendly packaging",
+      "Full-strength formula",
+      "Reduces hair loss",
+      "Strengthens and adds shine",
+      "Protects hair",
+    ],
+    benefitsAr: [
+      "تعبئة مدمجة مناسبة للسفر",
+      "تركيبة بالقوة الكاملة",
+      "يقلل تساقط الشعر",
+      "يقوي ويضيف اللمعان",
+      "يحمي الشعر",
+    ],
+    ingredients: [
+      {
+        id: "ing-5b",
+        nameAr: "بانثينول (البروفيتامين B5)",
+        nameEn: "Panthenol (Pro-Vitamin B5)",
+        description: "A provitamin that penetrates the hair shaft and deeply nourishes hair.",
+        benefits: ["Deep conditioning", "Adds shine", "Reduces breakage"],
+        mechanism: "Penetrates the hair cuticle binding moisture and swelling the hair fiber.",
+        concentration: "5%",
+      },
+      {
+        id: "ing-6b",
+        nameAr: "بيوتين",
+        nameEn: "Biotin (Vitamin B7)",
+        description: "Essential B vitamin for keratin infrastructure and hair growth.",
+        benefits: ["Hair growth", "Strengthening"],
+        mechanism: "Supports keratin production and hair follicle health.",
+        concentration: "2%",
+      },
+    ],
+    uses: ["Hair loss", "Damaged hair", "Dry and brittle hair", "Travel hair care"],
+    usesAr: ["تساقط الشعر", "الشعر التالف", "الشعر الجاف والهش", "العناية بالشعر أثناء السفر"],
+    directions: [
+      "Apply to damp towel-dried hair",
+      "Distribute evenly from mid-length to ends",
+      "Leave in — do not rinse",
+      "Style as desired",
+    ],
+    directionsAr: [
+      "ضعي على الشعر المجفف بالمنشفة والرطب",
+      "وزعي بالتساوي من منتصف الشعر إلى الأطراف",
+      "اتركي — لا تشطفي",
+      "صففي كما تشائين",
+    ],
+    warnings: ["For external use only", "Avoid contact with eyes", "Keep out of reach of children"],
+    warningsAr: ["للاستخدام الخارجي فقط", "تجنبي ملامسة العينين", "احفظي بعيداً عن متناول الأطفال"],
+    sideEffects: ["Rarely: scalp sensitivity in individuals with specific allergies"],
+    sideEffectsAr: ["نادراً: حساسية فروة الرأس لدى الأفراد ذوي الحساسيات المحددة"],
+    storage: ["Store below 30°C", "Keep away from sunlight"],
+    storageAr: ["يحفظ أقل من 30 درجة مئوية", "يُبعد عن أشعة الشمس"],
+    faqs: [
+      {
+        question: "Is this the same formula as the 150ml?",
+        questionAr: "هل هذه نفس تركيبة 150 مل؟",
+        answer: "Yes, Pedro Serum 75ml contains the exact same formula as the 150ml version.",
+        answerAr: "نعم، بيدرو سيروم 75مل يحتوي على نفس التركيبة تماماً مثل إصدار 150مل.",
+      },
+    ],
+    relatedProducts: ["pedro-serum-150", "pedro-shampoo", "strands-conditioner"],
+    discount: {
+      percentage: 10,
+      specialOffer: "10% OFF on your first purchase",
+      specialOfferAr: "خصم 10% على أول عملية شراء",
+      bonusProducts: [],
+      campaignDetails: "First-time buyer exclusive discount.",
+      campaignDetailsAr: "خصم حصري للمشترين لأول مرة.",
+      originalPrice: "165 EGP",
+      discountedPrice: "148 EGP",
+    },
+    marketingContent: "Take your hair care routine anywhere with Pedro Serum's travel-friendly 75ml.",
+    marketingContentAr: "خذي روتين العناية بشعرك إلى أي مكان مع بيدرو سيروم 75مل المناسب للسفر.",
+    medicalContent: "Same clinically tested formulation as 150ml, TSA compliant size.",
+  },
+  {
+    id: "4",
+    slug: "pedro-shampoo",
+    nameAr: "بيدرو شامبو 200 مل",
+    nameEn: "Pedro Shampoo 200 ml",
+    category: "shampoo",
+    categoryLabel: "Shampoo",
+    categoryLabelAr: "شامبو",
+    volume: "200 ml",
+    featured: true,
+    shortDescription:
+      "Therapeutic shampoo with Ketoconazole and zinc for dandruff control and scalp health.",
+    shortDescriptionAr:
+      "شامبو علاجي بالكيتوكونازول والزنك للتحكم في القشرة وصحة فروة الرأس.",
+    longDescription:
+      "Pedro Shampoo 200ml is a dermatologist-developed therapeutic shampoo that combines powerful active ingredients to address dandruff, seborrhea, and scalp conditions. Formulated with Ketoconazole, Zinc Pyrithione, and Tea Tree Oil, this shampoo effectively controls flaking and itching while being gentle enough for regular use. The sulfate-free formula cleanses deeply without stripping natural oils, leaving hair clean, healthy, and free from dandruff.",
+    longDescriptionAr:
+      "بيدرو شامبو 200مل هو شامبو علاجي طورته أطباء الجلد يجمع مكونات نشطة قوية لمعالجة القشرة والسيبوريا وحالات فروة الرأس. مصنوع بالكيتوكونازول وبيريثيون الزنك وزيت شجرة الشاي، يتحكم هذا الشامبو بفعالية في التقشر والحكة مع كونه لطيفاً بما يكفي للاستخدام المنتظم.",
+    tags: ["anti-dandruff", "scalp-health", "ketoconazole", "sulfate-free"],
+    tagsAr: ["مضاد للقشرة", "صحة فروة الرأس", "كيتوكونازول", "خالي من الكبريتات"],
+    benefits: [
+      "Eliminates dandruff and scalp flaking",
+      "Relieves scalp itching and irritation",
+      "Controls sebum production",
+      "Sulfate-free gentle cleansing",
+      "Promotes healthy scalp environment",
+      "Leaves hair clean and refreshed",
+    ],
+    benefitsAr: [
+      "يقضي على القشرة وتقشر فروة الرأس",
+      "يخفف حكة وتهيج فروة الرأس",
+      "يتحكم في إنتاج الزهم",
+      "تنظيف لطيف خالٍ من الكبريتات",
+      "يعزز بيئة فروة الرأس الصحية",
+      "يترك الشعر نظيفاً ومنعشاً",
+    ],
+    ingredients: [
+      {
+        id: "ing-9",
+        nameAr: "كيتوكونازول",
+        nameEn: "Ketoconazole",
+        description: "An antifungal agent that targets the root cause of dandruff — Malassezia yeast.",
+        benefits: ["Antifungal", "Anti-dandruff", "Scalp health"],
+        mechanism:
+          "Inhibits ergosterol synthesis in fungal cell membranes, disrupting Malassezia growth responsible for dandruff.",
+        concentration: "1%",
+      },
+      {
+        id: "ing-10",
+        nameAr: "بيريثيون الزنك",
+        nameEn: "Zinc Pyrithione",
+        description:
+          "A powerful antimicrobial and antifungal agent that effectively controls dandruff.",
+        benefits: ["Anti-dandruff", "Antimicrobial", "Sebum control"],
+        mechanism: "Disrupts cell membrane function in Malassezia and bacteria reducing proliferation.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-11",
+        nameAr: "زيت شجرة الشاي",
+        nameEn: "Tea Tree Oil",
+        description: "Natural essential oil with potent antifungal, antibacterial, and soothing properties.",
+        benefits: ["Antibacterial", "Soothing", "Anti-inflammatory", "Freshness"],
+        mechanism: "Terpinen-4-ol disrupts microbial cell membranes and inhibits growth.",
+        concentration: "0.5%",
+      },
+    ],
+    uses: [
+      "Dandruff (seborrhoeic dermatitis)",
+      "Scalp itching and flaking",
+      "Oily scalp conditions",
+      "Scalp psoriasis (mild)",
+      "General scalp health maintenance",
+    ],
+    usesAr: [
+      "القشرة (التهاب الجلد الدهني)",
+      "حكة وتقشر فروة الرأس",
+      "حالات فروة الرأس الدهنية",
+      "الصدفية الخفيفة لفروة الرأس",
+      "الحفاظ على الصحة العامة لفروة الرأس",
+    ],
+    directions: [
+      "Wet hair thoroughly",
+      "Apply a generous amount to scalp and hair",
+      "Massage gently for 2-3 minutes allowing formula to work",
+      "Leave on for 3-5 minutes for therapeutic effect",
+      "Rinse thoroughly with warm water",
+      "For best results, use 2-3 times per week",
+    ],
+    directionsAr: [
+      "بللي الشعر جيداً",
+      "ضعي كمية سخية على فروة الرأس والشعر",
+      "دلكي بلطف لمدة 2-3 دقائق مما يسمح للتركيبة بالعمل",
+      "اتركي لمدة 3-5 دقائق للتأثير العلاجي",
+      "اشطفي جيداً بالماء الدافئ",
+      "للحصول على أفضل النتائج، استخدمي 2-3 مرات في الأسبوع",
+    ],
+    warnings: [
+      "For external use only",
+      "Avoid contact with eyes; if contact occurs rinse with water",
+      "If condition worsens consult a physician",
+      "Not for use on children under 12 without medical advice",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "تجنبي ملامسة العينين؛ في حالة حدوث ذلك اشطفي بالماء",
+      "إذا تفاقمت الحالة استشيري طبيباً",
+      "لا يُستخدم للأطفال دون سن 12 دون استشارة طبية",
+    ],
+    sideEffects: [
+      "Mild scalp dryness in initial uses",
+      "Rarely: contact dermatitis in sensitive individuals",
+    ],
+    sideEffectsAr: [
+      "جفاف خفيف لفروة الرأس في الاستخدامات الأولى",
+      "نادراً: التهاب الجلد التماسي لدى الأفراد الحساسين",
+    ],
+    storage: ["Store in a cool dry place", "Keep away from children"],
+    storageAr: ["يحفظ في مكان بارد وجاف", "يُبعد عن الأطفال"],
+    faqs: [
+      {
+        question: "Can I use Pedro Shampoo every day?",
+        questionAr: "هل يمكنني استخدام بيدرو شامبو كل يوم؟",
+        answer:
+          "Pedro Shampoo can be used 2-3 times per week. Using it daily is generally safe but we recommend alternating with a gentle moisturizing shampoo.",
+        answerAr:
+          "يمكن استخدام بيدرو شامبو 2-3 مرات في الأسبوع. الاستخدام اليومي آمن عموماً لكننا نوصي بالتناوب مع شامبو مرطب لطيف.",
+      },
+    ],
+    relatedProducts: ["pedro-serum-150", "strands-conditioner"],
+    discount: {
+      percentage: 15,
+      specialOffer: "Bundle Deal: Shampoo + Serum 25% OFF",
+      specialOfferAr: "عرض الباقة: شامبو + سيروم بخصم 25%",
+      bonusProducts: ["Pedro Serum sample"],
+      campaignDetails: "Purchase shampoo and serum together and save 25%.",
+      campaignDetailsAr: "اشتري الشامبو والسيروم معاً ووفري 25%.",
+      originalPrice: "195 EGP",
+      discountedPrice: "165 EGP",
+    },
+    marketingContent:
+      "Say goodbye to dandruff forever. Pedro Shampoo's powerful therapeutic formula delivers scalp freedom.",
+    marketingContentAr:
+      "وداعاً للقشرة إلى الأبد. التركيبة العلاجية القوية لبيدرو شامبو تمنحك حرية فروة الرأس.",
+    medicalContent:
+      "Contains Ketoconazole 1% and Zinc Pyrithione 2%. Clinically validated against Malassezia furfur. Sulfate-free, pH balanced.",
+  },
+  {
+    id: "5",
+    slug: "pedro-lightening-cream",
+    nameAr: "بيدرو كريم تفتيح 60 جم",
+    nameEn: "Pedro Lightening Cream 60 gm",
+    category: "cream",
+    categoryLabel: "Cream",
+    categoryLabelAr: "كريم",
+    weight: "60 gm",
+    featured: true,
+    shortDescription:
+      "Advanced skin brightening cream with Kojic Acid and Licorice Extract for visible whitening results.",
+    shortDescriptionAr:
+      "كريم تفتيح متقدم بحمض الكوجيك ومستخلص العرقسوس لنتائج تبييض مرئية.",
+    longDescription:
+      "Pedro Lightening Cream 60gm is a premium dermatological formulation that targets melanin overproduction to deliver a visibly brighter, more even complexion. Combining the proven brightening power of Kojic Acid, Licorice Extract (Glabridin), Alpha Arbutin, and Vitamin C, this cream works to fade dark spots, hyperpigmentation, melasma, and post-inflammatory marks. The luxurious cream texture absorbs seamlessly, providing hydration alongside its brightening action. Suitable for face, neck, underarms, and other areas requiring brightening treatment.",
+    longDescriptionAr:
+      "بيدرو كريم تفتيح 60جم هو تركيبة جلدية متميزة تستهدف الإنتاج الزائد للميلانين لتوفير بشرة أكثر إشراقاً وتوحداً. يجمع بين القوة المجربة لحمض الكوجيك ومستخلص العرقسوس (الغلابريدين) والألفا أربوتين وفيتامين C، يعمل هذا الكريم على تلاشي البقع الداكنة وفرط التصبغ والكلف وعلامات ما بعد الالتهاب.",
+    tags: ["brightening", "kojic-acid", "licorice", "hyperpigmentation", "melasma"],
+    tagsAr: ["تفتيح", "حمض الكوجيك", "عرقسوس", "فرط التصبغ", "الكلف"],
+    benefits: [
+      "Visibly lightens dark spots within 4 weeks",
+      "Reduces melasma and uneven skin tone",
+      "Inhibits melanin production",
+      "Brightens and illuminates complexion",
+      "Provides antioxidant protection",
+      "Hydrates while brightening",
+      "Safe for sensitive skin",
+    ],
+    benefitsAr: [
+      "يفتح البقع الداكنة بشكل مرئي خلال 4 أسابيع",
+      "يقلل الكلف وعدم انتظام لون البشرة",
+      "يمنع إنتاج الميلانين",
+      "يفتح ويضيء البشرة",
+      "يوفر حماية مضادة للأكسدة",
+      "يرطب أثناء التفتيح",
+      "آمن للبشرة الحساسة",
+    ],
+    ingredients: [
+      {
+        id: "ing-12",
+        nameAr: "حمض الكوجيك",
+        nameEn: "Kojic Acid",
+        description:
+          "A natural brightening agent derived from fermentation that inhibits melanin production.",
+        benefits: ["Melanin inhibition", "Brightening", "Anti-hyperpigmentation"],
+        mechanism: "Chelates copper ions required by tyrosinase, reducing melanin synthesis.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-13",
+        nameAr: "مستخلص العرقسوس (الغلابريدين)",
+        nameEn: "Licorice Extract (Glabridin)",
+        description: "A potent plant-derived brightening compound from licorice root.",
+        benefits: ["Brightening", "Anti-inflammatory", "Even skin tone"],
+        mechanism: "Inhibits UVB-induced melanogenesis and tyrosinase activity.",
+        concentration: "1%",
+      },
+      {
+        id: "ing-14",
+        nameAr: "ألفا أربوتين",
+        nameEn: "Alpha Arbutin",
+        description:
+          "A stable, pure form of arbutin that effectively brightens skin without irritation.",
+        benefits: ["Brightening", "Gentle", "Effective against dark spots"],
+        mechanism: "Reversible inhibitor of tyrosinase, slowing melanin production safely.",
+        concentration: "2%",
+      },
+    ],
+    uses: [
+      "Dark spots and hyperpigmentation",
+      "Melasma",
+      "Post-acne marks",
+      "Sun damage and age spots",
+      "Underarm darkening",
+      "Uneven skin tone",
+    ],
+    usesAr: [
+      "البقع الداكنة وفرط التصبغ",
+      "الكلف",
+      "علامات ما بعد حب الشباب",
+      "أضرار الشمس والبقع العمرية",
+      "تغميق منطقة الإبط",
+      "عدم انتظام لون البشرة",
+    ],
+    directions: [
+      "Cleanse skin before application",
+      "Apply a thin layer to affected areas",
+      "Massage gently until fully absorbed",
+      "Use twice daily: morning and evening",
+      "Always apply SPF in the morning",
+      "Results visible from 4 weeks of consistent use",
+    ],
+    directionsAr: [
+      "نظفي البشرة قبل التطبيق",
+      "ضعي طبقة رقيقة على المناطق المصابة",
+      "دلكي بلطف حتى يمتص بالكامل",
+      "استخدمي مرتين يومياً: صباحاً ومساءً",
+      "ضعي دائماً واقياً للشمس في الصباح",
+      "النتائج مرئية من 4 أسابيع من الاستخدام المنتظم",
+    ],
+    warnings: [
+      "For external use only",
+      "Avoid sun exposure; use SPF 50+ protection",
+      "Do not use on broken or irritated skin",
+      "Not recommended during pregnancy without medical advice",
+      "Patch test recommended",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "تجنبي التعرض للشمس؛ استخدمي حماية SPF 50+",
+      "لا تستخدمي على البشرة المكسورة أو المتهيجة",
+      "غير موصى بها أثناء الحمل دون استشارة طبية",
+      "يُوصى باختبار تحمل",
+    ],
+    sideEffects: [
+      "Mild redness or tingling initially",
+      "Increased photosensitivity — always use sunscreen",
+    ],
+    sideEffectsAr: [
+      "احمرار خفيف أو وخز في البداية",
+      "زيادة حساسية للضوء — استخدمي دائماً واقي الشمس",
+    ],
+    storage: [
+      "Store below 25°C away from heat and humidity",
+      "Tightly close after use",
+    ],
+    storageAr: ["يحفظ أقل من 25 درجة مئوية بعيداً عن الحرارة والرطوبة", "أغلقي بإحكام بعد الاستخدام"],
+    faqs: [
+      {
+        question: "Can I use the cream on my underarms?",
+        questionAr: "هل يمكنني استخدام الكريم على منطقة الإبط؟",
+        answer:
+          "Yes, Pedro Lightening Cream is suitable for use on underarms, knees, and other dark areas of the body.",
+        answerAr:
+          "نعم، بيدرو كريم التفتيح مناسب للاستخدام على الإبط والركبتين وغيرها من المناطق الداكنة من الجسم.",
+      },
+    ],
+    relatedProducts: ["treo-serum", "norgin-sunblock", "sevapure-roll-on"],
+    discount: {
+      percentage: 20,
+      specialOffer: "20% OFF + Free Sunscreen Sample",
+      specialOfferAr: "خصم 20% + عينة واقي شمس مجانية",
+      bonusProducts: ["Norgin Sun Block sample 10gm"],
+      campaignDetails: "Brightening bundle: Cream + Sunscreen for best results.",
+      campaignDetailsAr: "باقة التفتيح: كريم + واقي شمس للحصول على أفضل النتائج.",
+      originalPrice: "245 EGP",
+      discountedPrice: "196 EGP",
+    },
+    marketingContent:
+      "Reveal your brightest skin. Pedro Lightening Cream's dermatologist formula fades dark spots beautifully.",
+    marketingContentAr:
+      "اكشفي عن أنصع بشرتك. تركيبة أطباء الجلد في بيدرو كريم التفتيح تلاشي البقع الداكنة بجمال.",
+    medicalContent:
+      "Contains Kojic Acid 2%, Alpha Arbutin 2%, Glabridin 1%. Triple-action melanin inhibition. Dermatologist tested, suitable for Fitzpatrick types I-VI.",
+  },
+  {
+    id: "6",
+    slug: "pedro-vd",
+    nameAr: "بيدرو V.D 250 مل",
+    nameEn: "Pedro V.D 250 ml",
+    category: "feminine-care",
+    categoryLabel: "Feminine Care",
+    categoryLabelAr: "عناية نسائية",
+    volume: "250 ml",
+    shortDescription:
+      "Gentle intimate feminine wash with lactic acid for pH balance and vaginal health.",
+    shortDescriptionAr:
+      "غسول نسائي لطيف بحمض اللاكتيك لتوازن pH وصحة المنطقة الحساسة.",
+    longDescription:
+      "Pedro V.D 250ml is a specially formulated vaginal douche and intimate wash designed to maintain the natural pH balance of the vaginal environment. Containing Lactic Acid, Aloe Vera, and Calendula Extract, this gentle solution helps prevent bacterial vaginosis, supports the growth of beneficial lactobacilli, and provides soothing relief from dryness and irritation. The dermatologically tested formula is free from harsh chemicals, fragrances, and parabens, making it safe for daily use.",
+    longDescriptionAr:
+      "بيدرو V.D 250مل هو غسول مهبلي ومنطقة حساسة مصنوع خصيصاً للحفاظ على توازن pH الطبيعي للبيئة المهبلية. يحتوي على حمض اللاكتيك والألوة فيرا ومستخلص القطيفة، يساعد هذا المحلول اللطيف على منع التهاب المهبل البكتيري، ويدعم نمو البكتيريا النافعة (عصيات اللاكتوباسيلوس)، ويوفر راحة مهدئة من الجفاف والتهيج.",
+    tags: ["intimate-care", "ph-balance", "lactic-acid", "gentle", "daily-use"],
+    tagsAr: ["عناية حساسة", "توازن pH", "حمض اللاكتيك", "لطيف", "استخدام يومي"],
+    benefits: [
+      "Maintains natural vaginal pH (3.8-4.5)",
+      "Prevents bacterial and yeast infections",
+      "Soothes irritation and dryness",
+      "Supports healthy vaginal flora",
+      "Gentle enough for daily use",
+      "Free from harsh chemicals and fragrances",
+    ],
+    benefitsAr: [
+      "يحافظ على pH المهبلي الطبيعي (3.8-4.5)",
+      "يمنع العدوى البكتيرية والفطرية",
+      "يهدئ التهيج والجفاف",
+      "يدعم صحة النبيت المهبلي",
+      "لطيف بما يكفي للاستخدام اليومي",
+      "خالٍ من المواد الكيميائية القاسية والعطور",
+    ],
+    ingredients: [
+      {
+        id: "ing-15",
+        nameAr: "حمض اللاكتيك",
+        nameEn: "Lactic Acid",
+        description: "Naturally present in a healthy vaginal environment, maintains optimal acidic pH.",
+        benefits: ["pH balance", "Antimicrobial", "Supports lactobacilli"],
+        mechanism:
+          "Acidifies the vaginal environment inhibiting pathogen growth and supporting beneficial bacteria.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-16",
+        nameAr: "الألوة فيرا",
+        nameEn: "Aloe Vera Extract",
+        description: "Soothing plant extract that calms irritation and provides gentle hydration.",
+        benefits: ["Soothing", "Anti-inflammatory", "Hydration", "Gentle"],
+        mechanism: "Polysaccharides create a soothing film reducing inflammation and irritation.",
+      },
+    ],
+    uses: [
+      "Daily intimate hygiene",
+      "Prevention of bacterial vaginosis",
+      "Relief from vaginal dryness",
+      "Post-menstrual hygiene",
+      "Post-intercourse freshness",
+    ],
+    usesAr: [
+      "النظافة الحميمة اليومية",
+      "الوقاية من التهاب المهبل البكتيري",
+      "الراحة من جفاف المهبل",
+      "النظافة بعد الدورة الشهرية",
+      "الانتعاش بعد العلاقة الزوجية",
+    ],
+    directions: [
+      "For external intimate washing: apply to clean hands and lather",
+      "Gently wash external intimate area",
+      "Rinse thoroughly with warm water",
+      "For douche use: follow healthcare provider instructions",
+      "Use once daily or as recommended",
+    ],
+    directionsAr: [
+      "للغسيل الحميم الخارجي: ضعي على اليدين النظيفتين وأحدثي رغوة",
+      "اغسلي المنطقة الحميمة الخارجية بلطف",
+      "اشطفي جيداً بالماء الدافئ",
+      "للاستخدام كغسول مهبلي: اتبعي تعليمات مقدم الرعاية الصحية",
+      "استخدمي مرة واحدة يومياً أو حسب التوصية",
+    ],
+    warnings: [
+      "Not for internal vaginal irrigation without medical advice",
+      "Discontinue if irritation occurs",
+      "Consult physician if symptoms persist",
+      "Not for use during pregnancy without medical approval",
+      "Keep out of reach of children",
+    ],
+    warningsAr: [
+      "لا تُستخدم للري المهبلي الداخلي دون استشارة طبية",
+      "أوقفي الاستخدام إذا حدث تهيج",
+      "استشيري طبيباً إذا استمرت الأعراض",
+      "لا تُستخدم أثناء الحمل دون موافقة طبية",
+      "احفظي بعيداً عن متناول الأطفال",
+    ],
+    sideEffects: [
+      "Rarely: mild stinging in sensitive individuals",
+      "Discontinue if any discomfort persists",
+    ],
+    sideEffectsAr: [
+      "نادراً: حرقة خفيفة لدى الأفراد الحساسين",
+      "أوقفي الاستخدام إذا استمر أي انزعاج",
+    ],
+    storage: ["Store in a cool dry place", "Avoid sunlight", "Keep tightly closed"],
+    storageAr: ["يحفظ في مكان بارد وجاف", "يُبعد عن الشمس", "يُغلق بإحكام"],
+    faqs: [
+      {
+        question: "Is daily use safe?",
+        questionAr: "هل الاستخدام اليومي آمن؟",
+        answer:
+          "Yes, Pedro V.D is formulated for daily use. Its gentle pH-balanced formula is designed to complement the body's natural intimate care.",
+        answerAr:
+          "نعم، بيدرو V.D مصنوع للاستخدام اليومي. تركيبتها اللطيفة المتوازنة pH مصممة لتكمل العناية الحميمة الطبيعية للجسم.",
+      },
+    ],
+    relatedProducts: ["pedro-vaginal-douche"],
+    discount: {
+      percentage: 15,
+      specialOffer: "15% OFF — Intimate Care Special",
+      specialOfferAr: "خصم 15% — عرض العناية الحميمة",
+      bonusProducts: [],
+      campaignDetails: "Women's intimate wellness promotion.",
+      campaignDetailsAr: "عرض ترويجي لصحة المرأة الحميمة.",
+      originalPrice: "180 EGP",
+      discountedPrice: "153 EGP",
+    },
+    marketingContent:
+      "Experience complete intimate comfort. Pedro V.D maintains your natural balance with every use.",
+    marketingContentAr:
+      "اختبري الراحة الحميمة الكاملة. بيدرو V.D يحافظ على توازنك الطبيعي مع كل استخدام.",
+    medicalContent:
+      "Gynecologist tested. pH 3.8-4.5. Contains Lactic Acid 2%. Paraben-free, fragrance-free, hypoallergenic.",
+  },
+  {
+    id: "7",
+    slug: "norgin-sunblock",
+    nameAr: "نورجين واقي الشمس 50 جم",
+    nameEn: "Norgin Sun Block 50 gm",
+    category: "sunscreen",
+    categoryLabel: "Sunscreen",
+    categoryLabelAr: "واقي الشمس",
+    weight: "50 gm",
+    featured: true,
+    shortDescription:
+      "Broad-spectrum SPF 50+ sunblock with Titanium Dioxide and Tinosorb for superior UV protection.",
+    shortDescriptionAr:
+      "واقي شمس ذو طيف واسع SPF 50+ بثاني أكسيد التيتانيوم وتينوسورب للحماية الفائقة من الأشعة فوق البنفسجية.",
+    longDescription:
+      "Norgin Sun Block 50gm delivers comprehensive broad-spectrum UV protection with an advanced combination of chemical and physical filters. Featuring Titanium Dioxide, Octinoxate, Tinosorb M, and Tinosorb S, this lightweight formula provides superior protection against both UVA and UVB rays. The non-greasy, quickly-absorbing formula is enriched with antioxidants and skin-conditioning agents to protect and nourish skin simultaneously. Tested under extreme conditions, Norgin Sun Block maintains its protective power even after water exposure.",
+    longDescriptionAr:
+      "نورجين واقي الشمس 50جم يوفر حماية شاملة من الأشعة فوق البنفسجية ذات الطيف الواسع مع مجموعة متقدمة من المرشحات الكيميائية والفيزيائية. يتميز بثاني أكسيد التيتانيوم والأوكتينوكسات وتينوسورب M وتينوسورب S، هذه التركيبة خفيفة الوزن توفر حماية فائقة من أشعة UVA وUVB على حد سواء.",
+    tags: ["spf-50", "broad-spectrum", "uva-uvb", "titanium-dioxide", "water-resistant"],
+    tagsAr: ["SPF 50", "طيف واسع", "UVA-UVB", "ثاني أكسيد التيتانيوم", "مقاوم للماء"],
+    benefits: [
+      "SPF 50+ broad-spectrum protection",
+      "Protects against UVA and UVB rays",
+      "Lightweight non-greasy formula",
+      "Water-resistant for 80 minutes",
+      "Suitable for all skin types",
+      "No white cast (invisible finish)",
+      "Prevents premature aging from sun damage",
+    ],
+    benefitsAr: [
+      "حماية واسعة الطيف SPF 50+",
+      "يحمي من أشعة UVA وUVB",
+      "تركيبة خفيفة الوزن غير دهنية",
+      "مقاوم للماء لمدة 80 دقيقة",
+      "مناسب لجميع أنواع البشرة",
+      "بدون أثر أبيض (لمسة نهائية غير مرئية)",
+      "يمنع الشيخوخة المبكرة الناجمة عن أضرار الشمس",
+    ],
+    ingredients: [
+      {
+        id: "ing-17",
+        nameAr: "ثاني أكسيد التيتانيوم",
+        nameEn: "Titanium Dioxide",
+        description:
+          "A physical UV filter that reflects and scatters UV radiation from the skin surface.",
+        benefits: ["UVB/UVA protection", "Photostable", "Non-irritating", "Safe for sensitive skin"],
+        mechanism: "Reflects and scatters UV photons at the skin surface, preventing skin penetration.",
+        concentration: "7%",
+      },
+      {
+        id: "ing-18",
+        nameAr: "أوكتينوكسات",
+        nameEn: "Octinoxate (Ethylhexyl Methoxycinnamate)",
+        description: "A chemical UV filter that absorbs UVB radiation and converts it to heat.",
+        benefits: ["UVB absorption", "Lightweight feel", "Film forming"],
+        mechanism: "Absorbs UV photons and dissipates energy as heat through molecular isomerization.",
+        concentration: "7.5%",
+      },
+      {
+        id: "ing-19",
+        nameAr: "تينوسورب M",
+        nameEn: "Tinosorb M",
+        description: "An advanced hybrid UV filter offering superior UVA and UVB protection.",
+        benefits: ["Broad-spectrum", "Photostable", "High SPF contribution"],
+        mechanism: "Both absorbs and reflects UV radiation providing coverage across the full UV spectrum.",
+        concentration: "10%",
+      },
+      {
+        id: "ing-20",
+        nameAr: "تينوسورب S",
+        nameEn: "Tinosorb S",
+        description: "A premium UVA/UVB chemical filter with exceptional photostability.",
+        benefits: ["UVA/UVB protection", "Photostable", "Synergistic action"],
+        mechanism: "Absorbs UV energy through resonance stabilization, maintaining long-term effectiveness.",
+        concentration: "10%",
+      },
+    ],
+    uses: [
+      "Daily sun protection",
+      "Beach and outdoor activities",
+      "Prevention of photoaging",
+      "After brightening or retinol treatments",
+      "Sensitive skin sun protection",
+    ],
+    usesAr: [
+      "الحماية اليومية من الشمس",
+      "أنشطة الشاطئ والهواء الطلق",
+      "الوقاية من الشيخوخة الضوئية",
+      "بعد علاجات التفتيح أو الريتينول",
+      "حماية البشرة الحساسة من الشمس",
+    ],
+    directions: [
+      "Apply generously to all exposed skin 20 minutes before sun exposure",
+      "Reapply every 2 hours or after swimming/sweating",
+      "Use on face, neck, and all exposed body areas",
+      "Use as the last step in your morning skincare routine",
+      "Apply SPF daily, even on cloudy days",
+    ],
+    directionsAr: [
+      "ضعي بكمية سخية على جميع البشرة المكشوفة 20 دقيقة قبل التعرض للشمس",
+      "أعيدي التطبيق كل ساعتين أو بعد السباحة/التعرق",
+      "استخدمي على الوجه والرقبة وجميع مناطق الجسم المكشوفة",
+      "استخدمي كآخر خطوة في روتين العناية بالبشرة الصباحي",
+      "ضعي SPF يومياً، حتى في الأيام الغائمة",
+    ],
+    warnings: [
+      "For external use only",
+      "Avoid direct contact with eyes",
+      "Do not use on infants under 6 months without medical advice",
+      "Consult doctor if rash or irritation occurs",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "تجنبي ملامسة العيون مباشرة",
+      "لا تُستخدم على الرضع دون 6 أشهر دون استشارة طبية",
+      "استشيري طبيباً إذا ظهر طفح أو تهيج",
+    ],
+    sideEffects: [
+      "Rarely: contact allergy in sensitive individuals",
+      "Mild whitish appearance with heavy application",
+    ],
+    sideEffectsAr: [
+      "نادراً: حساسية تماسية لدى الأفراد الحساسين",
+      "مظهر أبيض خفيف مع التطبيق الكثيف",
+    ],
+    storage: ["Store below 30°C", "Do not freeze", "Keep away from direct sun"],
+    storageAr: ["يحفظ أقل من 30 درجة مئوية", "لا تجمدي", "يُبعد عن أشعة الشمس المباشرة"],
+    faqs: [
+      {
+        question: "Can Norgin Sun Block be worn under makeup?",
+        questionAr: "هل يمكن ارتداء نورجين واقي الشمس تحت المكياج؟",
+        answer:
+          "Yes! Norgin Sun Block's lightweight, non-greasy formula layers beautifully under makeup and serves as an excellent primer base.",
+        answerAr:
+          "نعم! تركيبة نورجين واقي الشمس خفيفة الوزن وغير الدهنية تتطبق بشكل جميل تحت المكياج وتعمل كقاعدة ممتازة.",
+      },
+    ],
+    relatedProducts: ["pedro-lightening-cream", "treo-serum"],
+    discount: {
+      percentage: 25,
+      specialOffer: "Summer Bundle: Sunblock + Lightening Cream 25% OFF",
+      specialOfferAr: "باقة الصيف: واقي الشمس + كريم التفتيح بخصم 25%",
+      bonusProducts: ["Cooling face mist"],
+      campaignDetails: "Summer protection bundle — protect and brighten!",
+      campaignDetailsAr: "باقة حماية الصيف — احمي وفتحي البشرة!",
+      originalPrice: "220 EGP",
+      discountedPrice: "165 EGP",
+    },
+    marketingContent:
+      "Your skin's best defense. Norgin Sun Block's advanced formula protects beautifully without compromise.",
+    marketingContentAr:
+      "أفضل دفاع لبشرتك. تركيبة نورجين واقي الشمس المتقدمة تحمي بشكل جميل دون تنازلات.",
+    medicalContent:
+      "SPF 50+, PA++++. Contains Tinosorb M 10%, Tinosorb S 10%, Titanium Dioxide 7%, Octinoxate 7.5%. Water-resistant 80 min.",
+  },
+  {
+    id: "8",
+    slug: "bellezza-ivy-syrup",
+    nameAr: "بيلزا شراب اللبلاب",
+    nameEn: "Bellezza Ivy Syrup",
+    category: "syrup",
+    categoryLabel: "Herbal Syrup",
+    categoryLabelAr: "شراب عشبي",
+    volume: "100 ml",
+    shortDescription:
+      "Natural ivy leaf syrup for respiratory relief, cough, and bronchitis with proven efficacy.",
+    shortDescriptionAr:
+      "شراب ورق اللبلاب الطبيعي لتخفيف الجهاز التنفسي والسعال والتهاب الشعب الهوائية بفعالية مثبتة.",
+    longDescription:
+      "Bellezza Ivy Syrup is a premium herbal respiratory formulation based on the time-honored Hedera Helix (Common Ivy) leaf extract. Clinically validated for its efficacy in treating productive and non-productive coughs, bronchitis, and upper respiratory tract infections, this syrup works as a mucokinetic agent — thinning and loosening mucus for easier expectoration. The pleasant-tasting formula is suitable for adults and children over 2 years old, providing natural respiratory relief without drowsiness.",
+    longDescriptionAr:
+      "بيلزا شراب اللبلاب هو تركيبة عشبية تنفسية متميزة مبنية على مستخلص ورق اللبلاب الشائع (Hedera Helix) ذي التاريخ العريق. المعتمد سريرياً لفعاليته في علاج السعال المنتج وغير المنتج والتهاب الشعب الهوائية والتهابات الجهاز التنفسي العلوي، يعمل هذا الشراب كعامل مخاطي حركي — يرقق المخاط ويفككه لتسهيل طرحه.",
+    tags: ["cough", "respiratory", "bronchitis", "ivy", "herbal"],
+    tagsAr: ["سعال", "تنفسي", "التهاب شعب هوائية", "لبلاب", "عشبي"],
+    benefits: [
+      "Relieves acute and chronic bronchitis",
+      "Thins and loosens mucus",
+      "Eases productive and dry coughs",
+      "Natural plant-based formula",
+      "Suitable for adults and children (2+)",
+      "No drowsiness",
+      "Pleasant taste",
+    ],
+    benefitsAr: [
+      "يخفف التهاب الشعب الهوائية الحاد والمزمن",
+      "يرقق ويفكك المخاط",
+      "يخفف السعال المنتج والجاف",
+      "تركيبة طبيعية نباتية",
+      "مناسب للبالغين والأطفال (2 سنة فأكثر)",
+      "بدون نعاس",
+      "طعم ممتع",
+    ],
+    ingredients: [
+      {
+        id: "ing-21",
+        nameAr: "مستخلص ورق اللبلاب (Hedera Helix)",
+        nameEn: "Ivy Leaf Extract (Hedera Helix)",
+        description: "Clinically proven herbal extract with mucolytic and bronchodilatory properties.",
+        benefits: ["Mucolytic", "Bronchodilatory", "Antispasmodic", "Antioxidant"],
+        mechanism:
+          "Saponins (alpha-hederin, hederacoside C) activate beta-2 receptors causing bronchodilation and surfactant release.",
+        concentration: "Standardized to 25% hederacoside C",
+      },
+    ],
+    uses: [
+      "Acute and chronic bronchitis",
+      "Productive cough with mucus",
+      "Dry irritating cough",
+      "Upper respiratory tract infections",
+      "Respiratory conditions associated with mucus production",
+    ],
+    usesAr: [
+      "التهاب الشعب الهوائية الحاد والمزمن",
+      "السعال المنتج مع المخاط",
+      "السعال الجاف المزعج",
+      "التهابات الجهاز التنفسي العلوي",
+      "حالات الجهاز التنفسي المصاحبة لإنتاج المخاط",
+    ],
+    directions: [
+      "Adults and children over 12: 5.4ml (1 measuring spoon) 3 times daily",
+      "Children 6-11 years: 2.7ml twice daily",
+      "Children 2-5 years: 2.7ml once daily",
+      "Take with water or juice",
+      "Shake well before use",
+      "Treatment duration: 7-14 days",
+    ],
+    directionsAr: [
+      "البالغون والأطفال فوق 12 سنة: 5.4 مل (ملعقة قياس واحدة) 3 مرات يومياً",
+      "الأطفال 6-11 سنة: 2.7 مل مرتين يومياً",
+      "الأطفال 2-5 سنوات: 2.7 مل مرة واحدة يومياً",
+      "تناول مع الماء أو العصير",
+      "ارجي جيداً قبل الاستخدام",
+      "مدة العلاج: 7-14 يوماً",
+    ],
+    warnings: [
+      "Not for use in children under 2 years",
+      "Consult physician if symptoms worsen or persist beyond 14 days",
+      "Contains ethanol — consult physician if alcohol-sensitive",
+      "Consult doctor if pregnant or breastfeeding",
+      "Keep out of reach of children",
+    ],
+    warningsAr: [
+      "لا تُستخدم للأطفال دون 2 سنوات",
+      "استشيري طبيباً إذا تفاقمت الأعراض أو استمرت أكثر من 14 يوماً",
+      "يحتوي على إيثانول — استشيري طبيباً إذا كنت حساسة للكحول",
+      "استشيري طبيباً إذا كنت حاملاً أو مرضعاً",
+      "احفظي بعيداً عن متناول الأطفال",
+    ],
+    sideEffects: [
+      "Nausea or stomach upset in rare cases",
+      "Allergic reactions (rare) — discontinue if rash appears",
+    ],
+    sideEffectsAr: [
+      "غثيان أو اضطراب معدة في حالات نادرة",
+      "تفاعلات تحسسية (نادرة) — أوقفي الاستخدام إذا ظهر طفح",
+    ],
+    storage: [
+      "Store below 25°C",
+      "Keep away from children",
+      "Use within 6 months of opening",
+    ],
+    storageAr: ["يحفظ أقل من 25 درجة مئوية", "يُبعد عن الأطفال", "يُستخدم خلال 6 أشهر من الفتح"],
+    faqs: [
+      {
+        question: "Can I use it alongside antibiotics?",
+        questionAr: "هل يمكنني استخدامه مع المضادات الحيوية؟",
+        answer:
+          "Bellezza Ivy Syrup can generally be used alongside antibiotics for respiratory infections. Consult your physician for specific advice.",
+        answerAr:
+          "يمكن عموماً استخدام بيلزا شراب اللبلاب جنباً إلى جنب مع المضادات الحيوية لالتهابات الجهاز التنفسي. استشيري طبيبك للحصول على نصيحة محددة.",
+      },
+    ],
+    relatedProducts: ["bellezza-vitamin-d3", "bellezza-omega3", "vitapro"],
+    discount: {
+      percentage: 10,
+      specialOffer: "Winter Wellness Bundle — 10% OFF",
+      specialOfferAr: "باقة صحة الشتاء — خصم 10%",
+      bonusProducts: ["Vitamin C sachet"],
+      campaignDetails: "Respiratory health bundle for winter season.",
+      campaignDetailsAr: "باقة صحة الجهاز التنفسي لموسم الشتاء.",
+      originalPrice: "145 EGP",
+      discountedPrice: "130 EGP",
+    },
+    marketingContent:
+      "Breathe freely. Bellezza Ivy Syrup harnesses the ancient healing power of ivy for modern respiratory relief.",
+    marketingContentAr:
+      "تنفسي بحرية. شراب بيلزا اللبلاب يستخدم القوة العلاجية القديمة لنبات اللبلاب للراحة التنفسية الحديثة.",
+    medicalContent:
+      "Standardized Hedera Helix dry extract (5-7.5:1). Saponin content ≥5%. Mucolytic, spasmolytic, antitussive. Clinically validated.",
+  },
+  {
+    id: "9",
+    slug: "bellezza-vitamin-d3",
+    nameAr: "بيلزا فيتامين D3",
+    nameEn: "Bellezza Vitamin D3",
+    category: "supplement",
+    categoryLabel: "Supplement",
+    categoryLabelAr: "مكمل غذائي",
+    shortDescription:
+      "High-potency Vitamin D3 supplement for bone health, immunity, and overall wellbeing.",
+    shortDescriptionAr:
+      "مكمل فيتامين D3 عالي الفعالية لصحة العظام والمناعة والرفاهية الشاملة.",
+    longDescription:
+      "Bellezza Vitamin D3 provides the active form of Vitamin D3 (Cholecalciferol) — the same form naturally produced by your skin when exposed to sunlight. As one of the most widespread nutrient deficiencies globally, Vitamin D3 deficiency affects bone health, immune function, mood, and cardiovascular health. Each capsule delivers a clinically meaningful dose to correct deficiency and maintain optimal levels year-round. Combined with K2 for enhanced calcium absorption and utilization, this formula ensures maximum benefit.",
+    longDescriptionAr:
+      "بيلزا فيتامين D3 يوفر الشكل النشط من فيتامين D3 (الكوليكالسيفيرول) — نفس الشكل الذي تنتجه بشرتك طبيعياً عند التعرض لأشعة الشمس. كأحد أكثر نقص العناصر الغذائية انتشاراً على مستوى العالم، يؤثر نقص فيتامين D3 على صحة العظام ووظيفة المناعة والمزاج والصحة القلبية الوعائية.",
+    tags: ["vitamin-d3", "bone-health", "immunity", "supplement", "cholecalciferol"],
+    tagsAr: ["فيتامين D3", "صحة العظام", "المناعة", "مكمل غذائي", "كوليكالسيفيرول"],
+    benefits: [
+      "Supports strong bones and prevents osteoporosis",
+      "Enhances immune system function",
+      "Improves mood and reduces depression risk",
+      "Supports cardiovascular health",
+      "Helps regulate calcium and phosphorus absorption",
+      "Reduces risk of falls in elderly",
+      "Supports muscle function",
+    ],
+    benefitsAr: [
+      "يدعم العظام القوية ويمنع هشاشة العظام",
+      "يعزز وظيفة الجهاز المناعي",
+      "يحسن المزاج ويقلل خطر الاكتئاب",
+      "يدعم صحة القلب والأوعية الدموية",
+      "يساعد في تنظيم امتصاص الكالسيوم والفوسفور",
+      "يقلل خطر السقوط لدى كبار السن",
+      "يدعم وظيفة العضلات",
+    ],
+    ingredients: [
+      {
+        id: "ing-22",
+        nameAr: "فيتامين D3 (كوليكالسيفيرول)",
+        nameEn: "Vitamin D3 (Cholecalciferol)",
+        description:
+          "The active, bioidentical form of Vitamin D that matches what the body naturally produces.",
+        benefits: [
+          "Bone health",
+          "Immunity",
+          "Mood regulation",
+          "Calcium absorption",
+        ],
+        mechanism:
+          "Acts as a prohormone; converted to calcitriol in the liver and kidneys, which regulates calcium homeostasis and gene expression.",
+        concentration: "2000 IU per capsule",
+      },
+    ],
+    uses: [
+      "Vitamin D deficiency",
+      "Bone health maintenance",
+      "Immune support",
+      "Seasonal wellness",
+      "Post-pregnancy recovery",
+      "Elderly bone support",
+    ],
+    usesAr: [
+      "نقص فيتامين D",
+      "صيانة صحة العظام",
+      "دعم المناعة",
+      "الصحة الموسمية",
+      "التعافي بعد الحمل",
+      "دعم عظام كبار السن",
+    ],
+    directions: [
+      "Take 1 capsule daily with a main meal",
+      "Can be taken with or without food (better with fatty meal for absorption)",
+      "Do not exceed recommended dose unless advised by physician",
+      "Regular blood testing recommended to monitor Vitamin D levels",
+    ],
+    directionsAr: [
+      "تناول كبسولة واحدة يومياً مع وجبة رئيسية",
+      "يمكن تناولها مع أو بدون طعام (أفضل مع وجبة دهنية للامتصاص)",
+      "لا تتجاوزي الجرعة الموصى بها إلا إذا نصح طبيبك بذلك",
+      "يُوصى بالفحص الدوري للدم لمراقبة مستويات فيتامين D",
+    ],
+    warnings: [
+      "Do not exceed 4000 IU daily without medical supervision",
+      "Vitamin D toxicity possible with excessive intake",
+      "Consult physician if taking calcium supplements concurrently",
+      "Keep out of reach of children",
+    ],
+    warningsAr: [
+      "لا تتجاوزي 4000 وحدة دولية يومياً دون إشراف طبي",
+      "سمية فيتامين D محتملة مع الأخذ المفرط",
+      "استشيري طبيباً إذا كنت تتناولين مكملات الكالسيوم في نفس الوقت",
+      "احفظي بعيداً عن متناول الأطفال",
+    ],
+    sideEffects: [
+      "At recommended doses: generally very well tolerated",
+      "Excess: hypercalcemia symptoms (rare with recommended dose)",
+    ],
+    sideEffectsAr: [
+      "بالجرعات الموصى بها: متحملة بشكل عام جيداً جداً",
+      "الزائد: أعراض فرط كالسيوم الدم (نادرة بالجرعة الموصى بها)",
+    ],
+    storage: [
+      "Store in a cool dry place below 25°C",
+      "Keep away from moisture and direct sunlight",
+    ],
+    storageAr: ["يحفظ في مكان بارد وجاف أقل من 25 درجة مئوية", "يُبعد عن الرطوبة وأشعة الشمس المباشرة"],
+    faqs: [
+      {
+        question: "How do I know if I need Vitamin D3?",
+        questionAr: "كيف أعرف إذا كنت بحاجة لفيتامين D3؟",
+        answer:
+          "A simple blood test (25-OH Vitamin D) can determine your level. Levels below 30 ng/mL indicate deficiency. Most people with limited sun exposure benefit from supplementation.",
+        answerAr:
+          "يمكن لفحص دم بسيط (25-OH فيتامين D) تحديد مستواك. المستويات أقل من 30 نانوجرام/مل تشير إلى النقص. معظم الأشخاص ذوي التعرض المحدود للشمس يستفيدون من المكملات.",
+      },
+    ],
+    relatedProducts: ["bellezza-omega3", "vitapro", "bellezza-ivy-syrup"],
+    discount: {
+      percentage: 15,
+      specialOffer: "Wellness Trio: D3 + Omega3 + VitaPro Bundle 20% OFF",
+      specialOfferAr: "ثلاثي العافية: D3 + أوميجا 3 + فيتاقرو بخصم 20%",
+      bonusProducts: ["Calcium Magnesium sample"],
+      campaignDetails: "Complete wellness bundle for optimal health.",
+      campaignDetailsAr: "باقة صحة كاملة للصحة المثلى.",
+      originalPrice: "120 EGP",
+      discountedPrice: "102 EGP",
+    },
+    marketingContent:
+      "Sunshine in a capsule. Bellezza Vitamin D3 gives you the essential nutrient your body craves.",
+    marketingContentAr:
+      "أشعة الشمس في كبسولة. بيلزا فيتامين D3 يمنحك العنصر الغذائي الأساسي الذي يحتاجه جسمك.",
+    medicalContent:
+      "Cholecalciferol 2000 IU per softgel. Bioavailability-optimized oil-based formula. No artificial colors or preservatives.",
+  },
+  {
+    id: "10",
+    slug: "bellezza-omega3",
+    nameAr: "بيلزا أوميجا 3",
+    nameEn: "Bellezza Omega 3",
+    category: "supplement",
+    categoryLabel: "Supplement",
+    categoryLabelAr: "مكمل غذائي",
+    shortDescription:
+      "Ultra-pure Omega-3 fish oil with high EPA and DHA for heart, brain, and joint health.",
+    shortDescriptionAr:
+      "زيت سمك أوميجا 3 فائق النقاء بنسبة عالية من EPA وDHA لصحة القلب والدماغ والمفاصل.",
+    longDescription:
+      "Bellezza Omega 3 delivers ultra-pure, molecularly distilled fish oil rich in the essential Omega-3 fatty acids EPA (Eicosapentaenoic Acid) and DHA (Docosahexaenoic Acid). Each softgel provides clinically relevant doses of these powerful anti-inflammatory fatty acids that support cardiovascular health, cognitive function, joint mobility, and eye health. Sourced from sustainable cold-water deep-sea fish and triple-purified to remove heavy metals and environmental contaminants.",
+    longDescriptionAr:
+      "بيلزا أوميجا 3 يوفر زيت السمك فائق النقاء والمقطر جزيئياً الغني بأحماض أوميجا 3 الدهنية الأساسية EPA (حمض إيكوسابنتاينويك) وDHA (حمض دوكوساهيكسانويك). توفر كل كبسولة هلامية جرعات ذات صلة سريرية من هذه الأحماض الدهنية المضادة للالتهابات القوية التي تدعم صحة القلب والأوعية الدموية والوظيفة الإدراكية وحركة المفاصل وصحة العين.",
+    tags: ["omega-3", "epa-dha", "heart-health", "brain-health", "anti-inflammatory"],
+    tagsAr: ["أوميجا 3", "EPA-DHA", "صحة القلب", "صحة الدماغ", "مضاد للالتهاب"],
+    benefits: [
+      "Reduces triglycerides by up to 30%",
+      "Supports heart health and reduces cardiovascular risk",
+      "Enhances cognitive function and memory",
+      "Reduces joint inflammation and pain",
+      "Supports eye health and vision",
+      "Anti-inflammatory throughout the body",
+      "Supports mental wellbeing",
+    ],
+    benefitsAr: [
+      "يقلل الدهون الثلاثية بنسبة تصل إلى 30%",
+      "يدعم صحة القلب ويقلل خطر أمراض القلب والأوعية الدموية",
+      "يعزز الوظيفة الإدراكية والذاكرة",
+      "يقلل التهاب المفاصل والألم",
+      "يدعم صحة العين والرؤية",
+      "مضاد للالتهاب في جميع أنحاء الجسم",
+      "يدعم الصحة النفسية",
+    ],
+    ingredients: [
+      {
+        id: "ing-23",
+        nameAr: "EPA (حمض إيكوسابنتاينويك)",
+        nameEn: "EPA (Eicosapentaenoic Acid)",
+        description:
+          "A long-chain Omega-3 fatty acid with powerful anti-inflammatory and cardiovascular benefits.",
+        benefits: ["Anti-inflammatory", "Heart health", "Mental health", "Triglyceride reduction"],
+        mechanism: "Competes with arachidonic acid reducing production of pro-inflammatory eicosanoids.",
+        concentration: "360mg per softgel",
+      },
+      {
+        id: "ing-24",
+        nameAr: "DHA (حمض دوكوساهيكسانويك)",
+        nameEn: "DHA (Docosahexaenoic Acid)",
+        description:
+          "Essential structural fatty acid for brain and retinal health, crucial during pregnancy.",
+        benefits: ["Brain health", "Eye health", "Pregnancy support", "Cognitive function"],
+        mechanism:
+          "Structural component of neuronal membranes and photoreceptors, supporting neural signaling.",
+        concentration: "240mg per softgel",
+      },
+    ],
+    uses: [
+      "Cardiovascular health support",
+      "High triglycerides",
+      "Cognitive health and memory",
+      "Joint pain and inflammation",
+      "Pregnancy and fetal brain development",
+      "Dry eye syndrome",
+    ],
+    usesAr: [
+      "دعم صحة القلب والأوعية الدموية",
+      "ارتفاع الدهون الثلاثية",
+      "صحة الإدراك والذاكرة",
+      "آلام وتهيج المفاصل",
+      "الحمل ونمو دماغ الجنين",
+      "متلازمة جفاف العين",
+    ],
+    directions: [
+      "Adults: 1-2 softgels twice daily with meals",
+      "Pregnant women: consult physician for dosing",
+      "Take with food to maximize absorption and minimize fishy aftertaste",
+      "For best results, use consistently for at least 3 months",
+    ],
+    directionsAr: [
+      "البالغون: 1-2 كبسولة هلامية مرتين يومياً مع الوجبات",
+      "الحوامل: استشيري طبيباً للجرعة",
+      "تناولي مع الطعام لتحقيق أقصى امتصاص وتقليل المذاق السمكي",
+      "للحصول على أفضل النتائج، استخدمي باستمرار لمدة 3 أشهر على الأقل",
+    ],
+    warnings: [
+      "May interact with blood-thinning medications — consult physician",
+      "Discontinue 2 weeks before surgery",
+      "Consult physician if allergic to fish or shellfish",
+      "High doses may affect blood sugar in diabetics",
+    ],
+    warningsAr: [
+      "قد يتفاعل مع أدوية تخفيف الدم — استشيري طبيباً",
+      "أوقفي الاستخدام قبل أسبوعين من الجراحة",
+      "استشيري طبيباً إذا كنت تعانين من حساسية للأسماك أو الصدف",
+      "الجرعات العالية قد تؤثر على سكر الدم لدى مرضى السكري",
+    ],
+    sideEffects: [
+      "Mild fishy breath or aftertaste",
+      "Occasionally: loose stools at high doses",
+      "Very rarely: allergic reaction",
+    ],
+    sideEffectsAr: [
+      "رائحة سمكية خفيفة أو مذاق خلفي",
+      "أحياناً: براز رخو بالجرعات العالية",
+      "نادراً جداً: تفاعل تحسسي",
+    ],
+    storage: [
+      "Refrigerate after opening for optimal freshness",
+      "Store below 25°C before opening",
+      "Keep away from heat and light",
+    ],
+    storageAr: [
+      "ضعي في الثلاجة بعد الفتح للحفاظ على النضارة المثلى",
+      "يحفظ أقل من 25 درجة مئوية قبل الفتح",
+      "يُبعد عن الحرارة والضوء",
+    ],
+    faqs: [
+      {
+        question: "Is Bellezza Omega 3 suitable for vegetarians?",
+        questionAr: "هل بيلزا أوميجا 3 مناسب للنباتيين؟",
+        answer:
+          "Bellezza Omega 3 is fish-derived. Vegetarians should look for algae-based Omega-3 products. Contact us for plant-based alternatives.",
+        answerAr:
+          "بيلزا أوميجا 3 مشتق من الأسماك. يجب على النباتيين البحث عن منتجات أوميجا 3 المبنية على الطحالب. تواصلوا معنا للحصول على بدائل نباتية.",
+      },
+    ],
+    relatedProducts: ["bellezza-vitamin-d3", "vitapro"],
+    discount: {
+      percentage: 20,
+      specialOffer: "Heart Health Bundle: Omega 3 + Vitamin D3 20% OFF",
+      specialOfferAr: "باقة صحة القلب: أوميجا 3 + فيتامين D3 بخصم 20%",
+      bonusProducts: ["CoQ10 supplement sample"],
+      campaignDetails: "Essential heart health combination.",
+      campaignDetailsAr: "مجموعة صحة القلب الأساسية.",
+      originalPrice: "195 EGP",
+      discountedPrice: "156 EGP",
+    },
+    marketingContent:
+      "Fuel your heart, mind, and body. Bellezza Omega 3's ultra-pure formula delivers unmatched nutritional support.",
+    marketingContentAr:
+      "أطعمي قلبك وعقلك وجسمك. تركيبة بيلزا أوميجا 3 فائقة النقاء تقدم دعماً غذائياً لا مثيل له.",
+    medicalContent:
+      "Molecularly distilled fish oil. EPA 360mg + DHA 240mg per 1000mg softgel. Heavy metal tested. IFOS certified quality.",
+  },
+  {
+    id: "11",
+    slug: "vitapro",
+    nameAr: "فيتاقرو",
+    nameEn: "VitaPro",
+    category: "supplement",
+    categoryLabel: "Multivitamin",
+    categoryLabelAr: "متعدد الفيتامينات",
+    featured: true,
+    shortDescription:
+      "Complete daily multivitamin and mineral complex for energy, immunity, and total body health.",
+    shortDescriptionAr:
+      "مجمع يومي كامل من الفيتامينات والمعادن للطاقة والمناعة وصحة الجسم الكاملة.",
+    longDescription:
+      "VitaPro is Bellezza Pharma's flagship comprehensive multivitamin formulation, delivering 23 essential vitamins and minerals in optimally bioavailable forms. Unlike standard multivitamins that use poorly absorbed forms of nutrients, VitaPro uses methylated B vitamins, chelated minerals, and active forms of fat-soluble vitamins to ensure maximum absorption and effectiveness. One daily capsule covers nutritional gaps, supports energy metabolism, strengthens immunity, and promotes overall vitality.",
+    longDescriptionAr:
+      "فيتاقرو هو التركيبة المتعددة الفيتامينات الشاملة الرائدة من بيلزا فارما، التي تقدم 23 فيتامين ومعدن أساسي في أشكال بيولوجية مثلى. على عكس مكملات الفيتامينات المتعددة القياسية التي تستخدم أشكالاً سيئة الامتصاص من العناصر الغذائية، يستخدم فيتاقرو فيتامينات B المميثلة والمعادن المخلبية والأشكال النشطة من الفيتامينات القابلة للذوبان في الدهون لضمان أقصى امتصاص وفعالية.",
+    tags: ["multivitamin", "energy", "immunity", "daily-wellness", "minerals"],
+    tagsAr: ["متعدد الفيتامينات", "طاقة", "مناعة", "صحة يومية", "معادن"],
+    benefits: [
+      "23 essential vitamins and minerals in one capsule",
+      "Boosts energy levels and reduces fatigue",
+      "Strengthens immune defense",
+      "Supports healthy metabolism",
+      "Promotes skin, hair, and nail health",
+      "Supports bone density",
+      "Enhances cognitive performance",
+    ],
+    benefitsAr: [
+      "23 فيتامين ومعدن أساسي في كبسولة واحدة",
+      "يعزز مستويات الطاقة ويقلل الإرهاق",
+      "يقوي الدفاع المناعي",
+      "يدعم الأيض الصحي",
+      "يعزز صحة البشرة والشعر والأظافر",
+      "يدعم كثافة العظام",
+      "يعزز الأداء الإدراكي",
+    ],
+    ingredients: [
+      {
+        id: "ing-25",
+        nameAr: "فيتامين A",
+        nameEn: "Vitamin A (Retinyl Palmitate)",
+        description: "Essential for vision, immune function, and skin cell production.",
+        benefits: ["Vision", "Immunity", "Skin health"],
+        mechanism: "Retinoid receptors regulate gene expression for immune cells and epithelial tissue maintenance.",
+        concentration: "900mcg RAE",
+      },
+      {
+        id: "ing-26",
+        nameAr: "مجموعة فيتامينات B",
+        nameEn: "B-Complex (B1, B2, B6, B12, Folate)",
+        description: "Essential coenzymes for energy metabolism and neurological function.",
+        benefits: ["Energy production", "Brain health", "Red blood cell formation"],
+        mechanism: "Act as coenzymes in the citric acid cycle and oxidative phosphorylation for ATP production.",
+        concentration: "100% DV per capsule",
+      },
+    ],
+    uses: [
+      "Daily nutritional insurance",
+      "Fatigue and low energy",
+      "Nutritional deficiencies",
+      "Immune support",
+      "Active individuals and athletes",
+      "Post-illness recovery",
+    ],
+    usesAr: [
+      "ضمان التغذية اليومية",
+      "التعب ومستويات الطاقة المنخفضة",
+      "نقص التغذية",
+      "دعم المناعة",
+      "الأفراد النشيطون والرياضيون",
+      "التعافي بعد المرض",
+    ],
+    directions: [
+      "Take 1 capsule daily with a meal",
+      "Best taken in the morning with breakfast",
+      "Do not crush or chew — swallow whole",
+      "Store in a cool dry place",
+    ],
+    directionsAr: [
+      "تناول كبسولة واحدة يومياً مع وجبة",
+      "الأفضل تناولها في الصباح مع الإفطار",
+      "لا تسحقي أو تمضغي — ابتلعي كاملة",
+      "يحفظ في مكان بارد وجاف",
+    ],
+    warnings: [
+      "Do not exceed recommended daily dose",
+      "Not a substitute for a balanced diet",
+      "Contains iron — keep away from children",
+      "Consult physician during pregnancy",
+    ],
+    warningsAr: [
+      "لا تتجاوزي الجرعة اليومية الموصى بها",
+      "ليس بديلاً عن النظام الغذائي المتوازن",
+      "يحتوي على حديد — يُبعد عن الأطفال",
+      "استشيري طبيباً أثناء الحمل",
+    ],
+    sideEffects: [
+      "Urine may appear brighter yellow (B2 — harmless)",
+      "Mild stomach upset if taken on empty stomach",
+    ],
+    sideEffectsAr: [
+      "قد يبدو البول أصفر زاهياً (B2 — غير ضار)",
+      "اضطراب خفيف في المعدة إذا تناولت على معدة فارغة",
+    ],
+    storage: ["Store in a cool dry place below 25°C", "Protect from moisture"],
+    storageAr: ["يحفظ في مكان بارد وجاف أقل من 25 درجة مئوية", "يُحفظ من الرطوبة"],
+    faqs: [
+      {
+        question: "Should I take VitaPro with or without food?",
+        questionAr: "هل يجب تناول فيتاقرو مع أو بدون طعام؟",
+        answer:
+          "VitaPro is best taken with food to maximize absorption of fat-soluble vitamins (A, D, E, K) and minimize any stomach sensitivity.",
+        answerAr:
+          "يُفضل تناول فيتاقرو مع الطعام لزيادة امتصاص الفيتامينات القابلة للذوبان في الدهون (A، D، E، K) إلى أقصى حد وتقليل أي حساسية في المعدة.",
+      },
+    ],
+    relatedProducts: ["bellezza-vitamin-d3", "bellezza-omega3"],
+    discount: {
+      percentage: 25,
+      specialOffer: "3-Month Supply Bundle — 25% OFF",
+      specialOfferAr: "باقة 3 أشهر — خصم 25%",
+      bonusProducts: ["Antioxidant blend sample"],
+      campaignDetails: "Stock up and save with the 3-month wellness bundle.",
+      campaignDetailsAr: "احتزني ووفري مع باقة العافية لـ 3 أشهر.",
+      originalPrice: "150 EGP",
+      discountedPrice: "112 EGP",
+    },
+    marketingContent:
+      "23 nutrients. 1 capsule. Infinite vitality. VitaPro is your daily foundation for exceptional health.",
+    marketingContentAr:
+      "23 عنصراً غذائياً. كبسولة واحدة. حيوية لا حدود لها. فيتاقرو هو أساسك اليومي للصحة الاستثنائية.",
+    medicalContent:
+      "23 essential micronutrients. Uses methylated B-vitamins (Methylcobalamin, Methylfolate). Chelated minerals for superior absorption. No artificial colors.",
+  },
+  {
+    id: "12",
+    slug: "jackstril-facial-wash",
+    nameAr: "جاكستريل غسول الوجه",
+    nameEn: "Jackstril Facial Wash",
+    category: "facial-wash",
+    categoryLabel: "Facial Wash",
+    categoryLabelAr: "غسول وجه",
+    shortDescription:
+      "Gentle yet effective facial cleanser with Salicylic Acid for acne-prone and oily skin.",
+    shortDescriptionAr:
+      "غسول وجه لطيف وفعال بحمض الساليسيليك للبشرة الدهنية والمعرضة للحبوب.",
+    longDescription:
+      "Jackstril Facial Wash is a specialized dermatological facial cleanser designed for oily, acne-prone, and problematic skin. Formulated with Salicylic Acid, Niacinamide, and Zinc PCA, this facial wash effectively unclogs pores, removes excess sebum, and controls breakouts while maintaining the skin's natural moisture balance. The soap-free, pH-balanced formula ensures complete cleansing without stripping or over-drying, leaving skin clear, matte, and refreshed.",
+    longDescriptionAr:
+      "جاكستريل غسول الوجه هو غسول وجه جلدي متخصص مصمم للبشرة الدهنية والمعرضة للحبوب والبشرة الإشكالية. مصنوع بحمض الساليسيليك والنياسيناميد وزنك PCA، يفتح هذا الغسول المسام بفعالية ويزيل الزهم الزائد ويتحكم في الحبوب مع الحفاظ على توازن رطوبة البشرة الطبيعية.",
+    tags: ["acne", "oily-skin", "salicylic-acid", "pore-cleansing", "oil-control"],
+    tagsAr: ["حب شباب", "بشرة دهنية", "حمض الساليسيليك", "تنظيف المسام", "تحكم في الدهون"],
+    benefits: [
+      "Deeply cleanses pores and removes blackheads",
+      "Controls excess sebum production",
+      "Reduces acne breakouts",
+      "Minimizes pore appearance",
+      "Oil-free, matte finish",
+      "Soap-free and pH balanced",
+      "Suitable for daily use",
+    ],
+    benefitsAr: [
+      "ينظف المسام بعمق ويزيل الرؤوس السوداء",
+      "يتحكم في إنتاج الزهم الزائد",
+      "يقلل نوبات حب الشباب",
+      "يقلل ظهور المسام",
+      "خالٍ من الزيوت، لمسة نهائية مطفأة",
+      "خالٍ من الصابون ومتوازن pH",
+      "مناسب للاستخدام اليومي",
+    ],
+    ingredients: [
+      {
+        id: "ing-27",
+        nameAr: "حمض الساليسيليك",
+        nameEn: "Salicylic Acid",
+        description:
+          "A beta-hydroxy acid (BHA) that penetrates into pores to exfoliate dead skin cells and dissolve excess oil.",
+        benefits: ["Exfoliating", "Anti-acne", "Pore cleansing", "Comedolytic"],
+        mechanism:
+          "Oil-soluble BHA that penetrates into pores breaking down comedones and preventing blockages.",
+        concentration: "2%",
+      },
+      {
+        id: "ing-28",
+        nameAr: "نياسيناميد",
+        nameEn: "Niacinamide (Vitamin B3)",
+        description: "Multi-functional vitamin that regulates sebum and reduces inflammation.",
+        benefits: ["Sebum control", "Anti-inflammatory", "Pore minimizing", "Brightening"],
+        mechanism: "Downregulates sebocyte activity and inhibits melanosome transfer.",
+        concentration: "5%",
+      },
+    ],
+    uses: [
+      "Oily and combination skin cleansing",
+      "Acne-prone skin",
+      "Blackhead and whitehead prevention",
+      "Enlarged pores",
+      "Daily face washing",
+    ],
+    usesAr: [
+      "تنظيف البشرة الدهنية والمختلطة",
+      "البشرة المعرضة للحبوب",
+      "الوقاية من الرؤوس السوداء والبيضاء",
+      "المسام المتضخمة",
+      "غسيل الوجه اليومي",
+    ],
+    directions: [
+      "Wet face with lukewarm water",
+      "Apply a small amount to fingertips and work into lather",
+      "Gently massage over entire face for 60 seconds",
+      "Rinse thoroughly with water",
+      "Pat dry — do not rub",
+      "Use morning and evening",
+    ],
+    directionsAr: [
+      "بللي وجهك بالماء الفاتر",
+      "ضعي كمية صغيرة على أطراف الأصابع وأحدثي رغوة",
+      "دلكي بلطف على الوجه كله لمدة 60 ثانية",
+      "اشطفي جيداً بالماء",
+      "جففي بالنقر — لا تحكي",
+      "استخدمي صباحاً ومساءً",
+    ],
+    warnings: [
+      "Avoid eye area",
+      "May increase sun sensitivity — use SPF",
+      "Start with once daily if skin is sensitive",
+      "Not for use on irritated or broken skin",
+    ],
+    warningsAr: [
+      "تجنبي منطقة العينين",
+      "قد يزيد حساسية الشمس — استخدمي واقي الشمس",
+      "ابدئي بمرة واحدة يومياً إذا كانت بشرتك حساسة",
+      "لا تستخدمي على البشرة المتهيجة أو المكسورة",
+    ],
+    sideEffects: [
+      "Mild dryness or flaking initially",
+      "Increased sun sensitivity",
+    ],
+    sideEffectsAr: [
+      "جفاف خفيف أو تقشر في البداية",
+      "زيادة حساسية الشمس",
+    ],
+    storage: ["Store below 25°C", "Keep away from direct sunlight"],
+    storageAr: ["يحفظ أقل من 25 درجة مئوية", "يُبعد عن أشعة الشمس المباشرة"],
+    faqs: [
+      {
+        question: "Can I use Jackstril Facial Wash with other acne treatments?",
+        questionAr: "هل يمكنني استخدام جاكستريل غسول الوجه مع علاجات حب الشباب الأخرى؟",
+        answer:
+          "Yes, Jackstril works well as part of a comprehensive acne care routine. Layer with non-comedogenic moisturizer and SPF after use.",
+        answerAr:
+          "نعم، يعمل جاكستريل بشكل جيد كجزء من روتين شامل للعناية بحب الشباب. طبقي مرطباً غير مسد للمسام وواقي الشمس بعد الاستخدام.",
+      },
+    ],
+    relatedProducts: ["treo-serum", "norgin-sunblock", "pedro-lightening-cream"],
+    discount: {
+      percentage: 15,
+      specialOffer: "Clear Skin Bundle: Facial Wash + TREO Serum 15% OFF",
+      specialOfferAr: "باقة البشرة الصافية: غسول الوجه + تريو سيروم بخصم 15%",
+      bonusProducts: ["Spot treatment sample"],
+      campaignDetails: "Complete acne-fighting duo for clearer skin.",
+      campaignDetailsAr: "ثنائي كامل لمكافحة حب الشباب للحصول على بشرة أوضح.",
+      originalPrice: "175 EGP",
+      discountedPrice: "148 EGP",
+    },
+    marketingContent:
+      "Clear skin starts with clean pores. Jackstril Facial Wash purifies deeply for your best complexion.",
+    marketingContentAr:
+      "البشرة الصافية تبدأ بمسام نظيفة. جاكستريل غسول الوجه ينقي بعمق للحصول على أفضل بشرة.",
+    medicalContent:
+      "Salicylic Acid 2% (BHA). Soap-free, pH 4.5-5.5. Dermatologically tested. Non-comedogenic.",
+  },
+  {
+    id: "13",
+    slug: "suze-cream",
+    nameAr: "سوز كريم",
+    nameEn: "Suze Cream",
+    category: "cream",
+    categoryLabel: "Cream",
+    categoryLabelAr: "كريم",
+    shortDescription:
+      "Soothing and healing cream with Collagen and Aloe Vera for sensitive, irritated, or damaged skin.",
+    shortDescriptionAr:
+      "كريم مهدئ ومشفٍ بالكولاجين والألوة فيرا للبشرة الحساسة والمتهيجة أو التالفة.",
+    longDescription:
+      "Suze Cream is a dermatologist-formulated therapeutic cream that combines the reparative power of Collagen, Allantoin, and Aloe Vera to heal, soothe, and restore compromised skin. Ideal for dry skin, eczema, psoriasis, minor burns, diaper rash, and post-procedure skin recovery, Suze Cream works by forming a protective barrier over damaged skin while delivering active healing ingredients. The rich yet fast-absorbing formula provides lasting relief without leaving greasy residue.",
+    longDescriptionAr:
+      "سوز كريم هو كريم علاجي طورته أطباء الجلد يجمع القوة الترميمية للكولاجين والألانتوين والألوة فيرا لشفاء البشرة المتضررة وتهدئتها واستعادتها. مثالي للبشرة الجافة والإكزيما والصدفية والحروق البسيطة وطفح الحفاض والتعافي من الإجراءات الجلدية.",
+    tags: ["healing", "soothing", "collagen", "eczema", "sensitive-skin"],
+    tagsAr: ["شفاء", "تهدئة", "كولاجين", "إكزيما", "بشرة حساسة"],
+    benefits: [
+      "Soothes and relieves irritated skin",
+      "Accelerates skin healing and repair",
+      "Provides intense moisturization",
+      "Reduces redness and inflammation",
+      "Creates protective barrier over damaged skin",
+      "Suitable for sensitive and pediatric skin",
+      "Steroid-free formula",
+    ],
+    benefitsAr: [
+      "يهدئ ويخفف البشرة المتهيجة",
+      "يسرع شفاء البشرة وإصلاحها",
+      "يوفر ترطيباً مكثفاً",
+      "يقلل الاحمرار والالتهاب",
+      "ينشئ حاجزاً واقياً فوق البشرة التالفة",
+      "مناسب للبشرة الحساسة وبشرة الأطفال",
+      "تركيبة خالية من الستيرويد",
+    ],
+    ingredients: [
+      {
+        id: "ing-29",
+        nameAr: "كولاجين",
+        nameEn: "Hydrolyzed Collagen",
+        description: "Structural skin protein that supports repair, hydration, and elasticity.",
+        benefits: ["Repair", "Hydration", "Elasticity", "Wound healing"],
+        mechanism:
+          "Provides building blocks for dermal matrix reconstruction and creates a film that retains moisture.",
+        concentration: "3%",
+      },
+      {
+        id: "ing-30",
+        nameAr: "ألانتوين",
+        nameEn: "Allantoin",
+        description: "A powerful healing and keratolytic agent derived from comfrey plant.",
+        benefits: ["Healing", "Soothing", "Cell regeneration", "Moisturizing"],
+        mechanism: "Stimulates cell proliferation and tissue regeneration while softening keratin.",
+        concentration: "2%",
+      },
+    ],
+    uses: [
+      "Dry and very dry skin conditions",
+      "Eczema and atopic dermatitis",
+      "Minor burns and abrasions",
+      "Diaper rash",
+      "Post-cosmetic procedure skin recovery",
+      "Psoriasis (symptom relief)",
+      "Sunburn",
+    ],
+    usesAr: [
+      "حالات البشرة الجافة وشديدة الجفاف",
+      "الإكزيما والتهاب الجلد التأتبي",
+      "الحروق البسيطة والسحجات",
+      "طفح الحفاض",
+      "تعافي البشرة بعد الإجراءات التجميلية",
+      "الصدفية (تخفيف الأعراض)",
+      "حروق الشمس",
+    ],
+    directions: [
+      "Clean and dry the affected area",
+      "Apply a thin to moderate layer over the affected area",
+      "Gently massage until absorbed",
+      "Apply 2-4 times daily or as needed",
+      "For wounds: apply after cleaning, can be covered with gauze",
+    ],
+    directionsAr: [
+      "نظفي وجففي المنطقة المصابة",
+      "ضعي طبقة رقيقة إلى معتدلة على المنطقة المصابة",
+      "دلكي بلطف حتى يمتص",
+      "ضعي 2-4 مرات يومياً أو حسب الحاجة",
+      "للجروح: ضعي بعد التنظيف، يمكن تغطيتها بشاش",
+    ],
+    warnings: [
+      "Not for use on infected wounds without medical advice",
+      "Consult physician if condition worsens",
+      "Keep out of reach of children",
+      "Avoid contact with eyes",
+    ],
+    warningsAr: [
+      "لا تُستخدم على الجروح المصابة دون استشارة طبية",
+      "استشيري طبيباً إذا تفاقمت الحالة",
+      "احفظي بعيداً عن متناول الأطفال",
+      "تجنبي ملامسة العينين",
+    ],
+    sideEffects: ["Very rarely: contact allergy in sensitive individuals"],
+    sideEffectsAr: ["نادراً جداً: حساسية تماسية لدى الأفراد الحساسين"],
+    storage: ["Store below 25°C", "Keep tightly closed after use"],
+    storageAr: ["يحفظ أقل من 25 درجة مئوية", "يُغلق بإحكام بعد الاستخدام"],
+    faqs: [
+      {
+        question: "Can Suze Cream be used on babies?",
+        questionAr: "هل يمكن استخدام سوز كريم على الرضع؟",
+        answer:
+          "Yes, Suze Cream is formulated to be gentle enough for infant and pediatric skin use, including for diaper rash.",
+        answerAr:
+          "نعم، سوز كريم مصنوع ليكون لطيفاً بما يكفي لاستخدام بشرة الرضع والأطفال، بما في ذلك طفح الحفاض.",
+      },
+    ],
+    relatedProducts: ["treo-serum", "baby-locca"],
+    discount: {
+      percentage: 15,
+      specialOffer: "Healing Bundle: Suze Cream + Baby Locca 15% OFF",
+      specialOfferAr: "باقة الشفاء: سوز كريم + بيبي لوكا بخصم 15%",
+      bonusProducts: ["Healing gauze pack"],
+      campaignDetails: "Complete skin healing and care bundle.",
+      campaignDetailsAr: "باقة كاملة لشفاء البشرة والعناية بها.",
+      originalPrice: "185 EGP",
+      discountedPrice: "157 EGP",
+    },
+    marketingContent:
+      "When skin needs healing, choose Suze Cream. Nature-inspired science for total skin repair.",
+    marketingContentAr:
+      "عندما تحتاج البشرة للشفاء، اختاري سوز كريم. علم مستوحى من الطبيعة لإصلاح البشرة الكامل.",
+    medicalContent:
+      "Hydrolyzed Collagen 3%, Allantoin 2%, Aloe Vera. Steroid-free. Hypoallergenic. Dermatologist tested.",
+  },
+  {
+    id: "14",
+    slug: "pedro-mouth-spray",
+    nameAr: "بيدرو بخاخ الفم",
+    nameEn: "Pedro Mouth Spray",
+    category: "oral-care",
+    categoryLabel: "Oral Care",
+    categoryLabelAr: "عناية بالفم",
+    shortDescription:
+      "Fast-acting antibacterial mouth spray for fresh breath and oral hygiene on the go.",
+    shortDescriptionAr:
+      "بخاخ فم مضاد للبكتيريا سريع المفعول لنفس منعش ونظافة الفم أثناء التنقل.",
+    longDescription:
+      "Pedro Mouth Spray is an innovative oral care solution that delivers instant fresh breath and antibacterial protection directly to the oral cavity. Formulated with Chlorhexidine, Xylitol, and natural mint extracts, this spray effectively kills odor-causing bacteria, prevents plaque formation, and provides long-lasting fresh breath. The convenient spray format makes it ideal for use anytime, anywhere — perfect for before meetings, after meals, or whenever you need instant oral freshness.",
+    longDescriptionAr:
+      "بيدرو بخاخ الفم هو حل مبتكر للعناية بالفم يوفر نفساً منعشاً فورياً وحماية مضادة للبكتيريا مباشرة للتجويف الفموي. مصنوع بالكلوهيكسيدين والزيليتول ومستخلصات النعناع الطبيعية، يقتل هذا البخاخ البكتيريا المسببة للروائح الكريهة بفعالية، ويمنع تكوين البلاك، ويوفر نفساً منعشاً دائماً.",
+    tags: ["fresh-breath", "antibacterial", "oral-hygiene", "chlorhexidine", "portable"],
+    tagsAr: ["نفس منعش", "مضاد للبكتيريا", "نظافة الفم", "كلوهيكسيدين", "محمول"],
+    benefits: [
+      "Instant fresh breath for up to 4 hours",
+      "Kills 99.9% of oral bacteria",
+      "Prevents plaque and tartar build-up",
+      "Reduces gum inflammation",
+      "Convenient pocket-size spray",
+      "Alcohol-free option available",
+    ],
+    benefitsAr: [
+      "نفس منعش فوري لمدة تصل إلى 4 ساعات",
+      "يقتل 99.9% من البكتيريا الفموية",
+      "يمنع تراكم البلاك والجير",
+      "يقلل التهاب اللثة",
+      "بخاخ صغير مناسب للجيب",
+      "خيار خالٍ من الكحول متاح",
+    ],
+    ingredients: [
+      {
+        id: "ing-31",
+        nameAr: "كلوهيكسيدين",
+        nameEn: "Chlorhexidine Gluconate",
+        description:
+          "A potent antiseptic that provides broad-spectrum antibacterial action in the oral cavity.",
+        benefits: ["Antibacterial", "Anti-plaque", "Anti-gingivitis", "Antifungal"],
+        mechanism:
+          "Disrupts bacterial cell membrane integrity by binding to negatively charged cell wall components.",
+        concentration: "0.12%",
+      },
+      {
+        id: "ing-32",
+        nameAr: "زيليتول",
+        nameEn: "Xylitol",
+        description:
+          "A natural sugar alcohol that inhibits Streptococcus mutans growth and prevents tooth decay.",
+        benefits: ["Anti-cavity", "Antibacterial", "Saliva stimulation"],
+        mechanism: "Cannot be fermented by oral bacteria, starving cariogenic bacteria of energy.",
+        concentration: "10%",
+      },
+    ],
+    uses: [
+      "Bad breath (halitosis)",
+      "Pre and post meal oral freshness",
+      "Gum disease prevention",
+      "Post-dental procedure care",
+      "On-the-go oral hygiene",
+    ],
+    usesAr: [
+      "رائحة الفم الكريهة (الهاليتوسيس)",
+      "انتعاش الفم قبل وبعد الوجبات",
+      "الوقاية من أمراض اللثة",
+      "العناية بعد إجراء طب الأسنان",
+      "نظافة الفم أثناء التنقل",
+    ],
+    directions: [
+      "Shake gently before use",
+      "Spray 1-2 pumps directly into the mouth",
+      "Move tongue to distribute",
+      "Do not rinse for maximum effect",
+      "Use up to 4 times daily",
+    ],
+    directionsAr: [
+      "هزي بلطف قبل الاستخدام",
+      "بخي 1-2 ضخات مباشرة في الفم",
+      "حركي اللسان للتوزيع",
+      "لا تشطفي للحصول على أقصى تأثير",
+      "استخدمي حتى 4 مرات يومياً",
+    ],
+    warnings: [
+      "Not for swallowing",
+      "Keep away from eyes",
+      "Not for use in children under 6",
+      "May temporarily stain teeth with prolonged high-frequency use",
+    ],
+    warningsAr: [
+      "لا تبتلعي",
+      "يُبعد عن العينين",
+      "لا يُستخدم للأطفال دون سن 6",
+      "قد يلوّن الأسنان مؤقتاً مع الاستخدام المتكرر العالي لفترة طويلة",
+    ],
+    sideEffects: [
+      "Temporary taste alteration",
+      "Mild staining with prolonged use",
+    ],
+    sideEffectsAr: [
+      "تغيير مؤقت في حس التذوق",
+      "تلوين خفيف مع الاستخدام المطوّل",
+    ],
+    storage: ["Store at room temperature", "Avoid extreme heat"],
+    storageAr: ["يحفظ في درجة حرارة الغرفة", "يُبعد عن الحرارة الشديدة"],
+    faqs: [
+      {
+        question: "Can I use Pedro Mouth Spray instead of mouthwash?",
+        questionAr: "هل يمكنني استخدام بيدرو بخاخ الفم بدلاً من غسول الفم؟",
+        answer:
+          "Pedro Mouth Spray is a complementary product to your oral hygiene routine. For best results, maintain regular brushing and flossing and use the spray for on-the-go freshness.",
+        answerAr:
+          "بيدرو بخاخ الفم هو منتج مكمل لروتين نظافة فمك. للحصول على أفضل النتائج، حافظي على التفريش والتخليل المنتظمين واستخدمي البخاخ للانتعاش أثناء التنقل.",
+      },
+    ],
+    relatedProducts: ["pedro-vaginal-douche"],
+    discount: {
+      percentage: 10,
+      specialOffer: "Pedro Oral Care Bundle 10% OFF",
+      specialOfferAr: "باقة بيدرو للعناية بالفم بخصم 10%",
+      bonusProducts: ["Travel toothbrush"],
+      campaignDetails: "Complete oral care travel bundle.",
+      campaignDetailsAr: "باقة سفر كاملة للعناية بالفم.",
+      originalPrice: "95 EGP",
+      discountedPrice: "85 EGP",
+    },
+    marketingContent:
+      "Confidence in every spray. Pedro Mouth Spray gives you fresh breath confidence anywhere, anytime.",
+    marketingContentAr:
+      "ثقة في كل رشة. بيدرو بخاخ الفم يمنحك ثقة النفس المنعش في أي مكان وأي وقت.",
+    medicalContent:
+      "Chlorhexidine Gluconate 0.12%, Xylitol 10%. Broad-spectrum antibacterial action. ADA-guideline compliant formula.",
+  },
+  {
+    id: "15",
+    slug: "pedro-vaginal-douche",
+    nameAr: "بيدرو غسول مهبلي",
+    nameEn: "Pedro Vaginal Douche",
+    category: "feminine-care",
+    categoryLabel: "Feminine Care",
+    categoryLabelAr: "عناية نسائية",
+    shortDescription:
+      "Clinically formulated vaginal douche for pH restoration and feminine hygiene.",
+    shortDescriptionAr:
+      "غسول مهبلي مصنوع سريرياً لاستعادة pH والنظافة النسائية.",
+    longDescription:
+      "Pedro Vaginal Douche is a premium gynecologist-approved intimate care solution that goes beyond basic hygiene. Formulated with a precision-balanced combination of Lactic Acid and Lactobacillus ferment lysate, this douche actively restores the natural vaginal flora, neutralizes harmful bacteria and yeast, and creates an environment where beneficial lactobacilli can thrive. The gentle applicator design ensures precise, comfortable delivery of the active formula.",
+    longDescriptionAr:
+      "بيدرو الغسول المهبلي هو حل عناية حميمة متميز معتمد من أطباء أمراض النساء يتجاوز النظافة الأساسية. مصنوع بمزيج متوازن بدقة من حمض اللاكتيك وليسات تخمير اللاكتوباسيلوس، يستعيد هذا الغسول النبيت المهبلي الطبيعي بشكل نشط ويحيّد البكتيريا الضارة والفطريات.",
+    tags: ["vaginal-care", "ph-balance", "lactobacillus", "gynecologist-approved"],
+    tagsAr: ["عناية مهبلية", "توازن pH", "لاكتوباسيلوس", "معتمد من أطباء النساء"],
+    benefits: [
+      "Restores natural vaginal pH",
+      "Prevents recurrent bacterial vaginosis",
+      "Prevents yeast infections",
+      "Supports beneficial vaginal flora",
+      "Reduces discharge and odor",
+      "Gentle comfortable application",
+    ],
+    benefitsAr: [
+      "يستعيد pH المهبلي الطبيعي",
+      "يمنع التهاب المهبل البكتيري المتكرر",
+      "يمنع العدوى الفطرية",
+      "يدعم النبيت المهبلي المفيد",
+      "يقلل الإفرازات والرائحة",
+      "تطبيق لطيف ومريح",
+    ],
+    ingredients: [
+      {
+        id: "ing-33",
+        nameAr: "حمض اللاكتيك",
+        nameEn: "Lactic Acid",
+        description: "Naturally present in vaginal secretions, maintains ideal pH for health.",
+        benefits: ["pH balance", "Antimicrobial", "Protective"],
+        mechanism: "Acidifies the vaginal environment creating conditions hostile to pathogens.",
+        concentration: "3%",
+      },
+    ],
+    uses: [
+      "Bacterial vaginosis prevention and management",
+      "After antibiotic courses",
+      "Post-menstrual hygiene",
+      "Recurrent yeast infection prevention",
+    ],
+    usesAr: [
+      "الوقاية من التهاب المهبل البكتيري وإدارته",
+      "بعد دورات المضادات الحيوية",
+      "النظافة بعد الدورة الشهرية",
+      "الوقاية من عدوى الخميرة المتكررة",
+    ],
+    directions: [
+      "Consult gynecologist before first use",
+      "Use as directed by physician",
+      "Single-use applicator — do not reuse",
+      "Gently insert applicator as instructed",
+      "Typically used 1-2 times per week or as prescribed",
+    ],
+    directionsAr: [
+      "استشيري طبيب أمراض النساء قبل الاستخدام الأول",
+      "استخدمي حسب توجيهات الطبيب",
+      "أداة استخدام واحد — لا تُعاد الاستخدام",
+      "أدخلي الأداة بلطف كما هو موضح",
+      "تُستخدم عادةً 1-2 مرة في الأسبوع أو حسب الوصفة الطبية",
+    ],
+    warnings: [
+      "For vaginal use only under medical guidance",
+      "Do not use during menstruation",
+      "Do not use if pregnant unless directed by physician",
+      "Discontinue if irritation occurs",
+      "If symptoms persist, consult physician",
+    ],
+    warningsAr: [
+      "للاستخدام المهبلي فقط تحت التوجيه الطبي",
+      "لا تُستخدم خلال الحيض",
+      "لا تُستخدم أثناء الحمل إلا إذا وجّه الطبيب",
+      "أوقفي الاستخدام إذا حدث تهيج",
+      "إذا استمرت الأعراض، استشيري طبيباً",
+    ],
+    sideEffects: [
+      "Mild temporary irritation with first use",
+      "Consult physician if discomfort persists",
+    ],
+    sideEffectsAr: [
+      "تهيج خفيف مؤقت مع الاستخدام الأول",
+      "استشيري طبيباً إذا استمر الانزعاج",
+    ],
+    storage: ["Store at room temperature below 25°C", "Keep in original packaging"],
+    storageAr: ["يحفظ في درجة حرارة الغرفة أقل من 25 درجة مئوية", "يُحفظ في العبوة الأصلية"],
+    faqs: [
+      {
+        question: "Is daily use of vaginal douche recommended?",
+        questionAr: "هل يُوصى بالاستخدام اليومي للغسول المهبلي؟",
+        answer:
+          "Daily douching is not generally recommended. Use as directed by your gynecologist, typically no more than 1-2 times per week.",
+        answerAr:
+          "لا يُوصى عموماً بالغسول اليومي. استخدمي حسب توجيهات طبيب أمراض النساء، عادةً لا أكثر من 1-2 مرة في الأسبوع.",
+      },
+    ],
+    relatedProducts: ["pedro-vd"],
+    discount: {
+      percentage: 10,
+      specialOffer: "Feminine Care Bundle 10% OFF",
+      specialOfferAr: "باقة العناية النسائية بخصم 10%",
+      bonusProducts: [],
+      campaignDetails: "Women's health bundle.",
+      campaignDetailsAr: "باقة صحة المرأة.",
+      originalPrice: "135 EGP",
+      discountedPrice: "121 EGP",
+    },
+    marketingContent:
+      "Restore balance naturally. Pedro Vaginal Douche brings clinically proven care to intimate wellness.",
+    marketingContentAr:
+      "استعيدي التوازن بشكل طبيعي. بيدرو الغسول المهبلي يجلب الرعاية المثبتة سريرياً للعافية الحميمة.",
+    medicalContent:
+      "Lactic Acid 3%, Lactobacillus ferment lysate. Gynecologist tested. pH optimized 3.8-4.5.",
+  },
+  {
+    id: "16",
+    slug: "baby-locca",
+    nameAr: "بيبي لوكا كحول إيثيلي",
+    nameEn: "Baby Locca Ethyl Alcohol",
+    category: "baby-care",
+    categoryLabel: "Baby Care",
+    categoryLabelAr: "عناية بالأطفال",
+    shortDescription:
+      "Gentle hospital-grade ethyl alcohol solution for newborn and baby skin antisepsis.",
+    shortDescriptionAr:
+      "محلول كحول إيثيلي لطيف بدرجة المستشفيات لتعقيم بشرة حديثي الولادة والأطفال.",
+    longDescription:
+      "Baby Locca Ethyl Alcohol is a specially formulated 70% ethyl alcohol antiseptic solution designed for the delicate care of newborns and infants. Unlike standard rubbing alcohol, Baby Locca is enriched with Glycerin and Aloe Vera to prevent skin drying while delivering effective antiseptic action. It is routinely used by healthcare professionals and parents for umbilical cord care, minor skin antisepsis, and medical equipment disinfection in neonatal and pediatric settings.",
+    longDescriptionAr:
+      "بيبي لوكا كحول إيثيلي هو محلول مطهر بنسبة 70% من الكحول الإيثيلي مصنوع خصيصاً للعناية اللطيفة بحديثي الولادة والرضع. على عكس كحول الفرك القياسي، يتميز بيبي لوكا بالجلسرين والألوة فيرا لمنع جفاف البشرة مع تقديم تأثير مطهر فعال.",
+    tags: ["baby", "antiseptic", "ethyl-alcohol", "newborn", "umbilical-care"],
+    tagsAr: ["طفل", "مطهر", "كحول إيثيلي", "مولود جديد", "عناية سرة الطفل"],
+    benefits: [
+      "Gentle antisepsis for newborn and infant skin",
+      "Enriched with Glycerin to prevent dryness",
+      "Hospital-grade 70% ethyl alcohol effectiveness",
+      "Safe for umbilical cord care",
+      "No harsh additives",
+      "Dermatologist tested for newborn safety",
+    ],
+    benefitsAr: [
+      "تطهير لطيف لبشرة المولود والرضيع",
+      "مغني بالجلسرين لمنع الجفاف",
+      "فعالية كحول إيثيلي 70% بدرجة المستشفيات",
+      "آمن للعناية بسرة الطفل",
+      "بدون إضافات قاسية",
+      "اختبار طبيب الجلدية لسلامة المولود",
+    ],
+    ingredients: [
+      {
+        id: "ing-34",
+        nameAr: "كحول إيثيلي",
+        nameEn: "Ethyl Alcohol (Ethanol)",
+        description:
+          "Medical-grade alcohol at 70% concentration, the optimal for broad-spectrum antiseptic action.",
+        benefits: ["Antiseptic", "Disinfectant", "Broad-spectrum antimicrobial"],
+        mechanism:
+          "Denatures bacterial proteins and disrupts cell membranes, killing bacteria, viruses, and fungi.",
+        concentration: "70%",
+      },
+      {
+        id: "ing-35",
+        nameAr: "جلسرين",
+        nameEn: "Glycerin (Glycerol)",
+        description: "Humectant that prevents the drying effect of alcohol on delicate baby skin.",
+        benefits: ["Moisturizing", "Skin protection", "Gentle on skin"],
+        mechanism: "Attracts and retains water in the skin layers, counteracting alcohol's drying effect.",
+        concentration: "3%",
+      },
+    ],
+    uses: [
+      "Umbilical cord stump antisepsis",
+      "Newborn skin antisepsis before injections",
+      "Cleaning thermometers and medical equipment",
+      "Minor skin cleansing before bandaging",
+    ],
+    usesAr: [
+      "تطهير سرة الطفل المتبقية",
+      "تطهير بشرة المولود قبل الحقن",
+      "تنظيف مقاييس الحرارة والمعدات الطبية",
+      "تنظيف البشرة الخفيف قبل التضميد",
+    ],
+    directions: [
+      "Apply with a clean cotton ball or swab",
+      "For umbilical cord: clean base of cord gently",
+      "Allow to dry naturally",
+      "For skin antisepsis: wipe area, allow to dry before proceeding",
+    ],
+    directionsAr: [
+      "ضعي بكرة قطن نظيفة أو مسحة",
+      "للسرة: نظفي قاعدة الحبل بلطف",
+      "اتركي يجف طبيعياً",
+      "لتطهير البشرة: امسحي المنطقة، اتركي تجف قبل المتابعة",
+    ],
+    warnings: [
+      "For external use only",
+      "Flammable — keep away from open flames",
+      "Avoid contact with eyes",
+      "Do not use on large open wounds",
+      "Keep away from child's reach",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "قابل للاشتعال — يُبعد عن اللهب المكشوف",
+      "تجنبي ملامسة العينين",
+      "لا تُستخدم على الجروح المفتوحة الكبيرة",
+      "يُبعد عن متناول الأطفال",
+    ],
+    sideEffects: [
+      "Skin dryness with repeated excessive use",
+      "Mild stinging on raw or abraded skin",
+    ],
+    sideEffectsAr: [
+      "جفاف البشرة مع الاستخدام المفرط المتكرر",
+      "حرقة خفيفة على البشرة النيئة أو المسحوجة",
+    ],
+    storage: ["Store in a cool place away from heat", "Keep tightly capped", "Away from flames"],
+    storageAr: ["يحفظ في مكان بارد بعيداً عن الحرارة", "يُغلق بإحكام", "بعيداً عن اللهب"],
+    faqs: [
+      {
+        question: "At what age can I stop using Baby Locca for cord care?",
+        questionAr: "في أي سن يمكنني التوقف عن استخدام بيبي لوكا لعناية السرة؟",
+        answer:
+          "Use Baby Locca for cord care until the umbilical stump falls off naturally, typically within 1-3 weeks. After healing, discontinue cord care.",
+        answerAr:
+          "استخدمي بيبي لوكا للعناية بالسرة حتى يسقط جزء السرة المتبقي بشكل طبيعي، عادةً خلال 1-3 أسابيع. بعد الشفاء، أوقفي العناية بالسرة.",
+      },
+    ],
+    relatedProducts: ["suze-cream"],
+    discount: {
+      percentage: 10,
+      specialOffer: "New Baby Bundle 10% OFF",
+      specialOfferAr: "باقة المولود الجديد بخصم 10%",
+      bonusProducts: ["Cotton balls pack"],
+      campaignDetails: "Essential newborn care bundle.",
+      campaignDetailsAr: "باقة عناية أساسية بالمولود الجديد.",
+      originalPrice: "55 EGP",
+      discountedPrice: "49 EGP",
+    },
+    marketingContent:
+      "Gentle care from day one. Baby Locca provides hospital-grade protection with a gentle touch for your precious newborn.",
+    marketingContentAr:
+      "عناية لطيفة من اليوم الأول. بيبي لوكا يوفر حماية بدرجة المستشفيات بلمسة لطيفة لمولودك العزيز.",
+    medicalContent:
+      "Ethyl Alcohol 70% v/v. Glycerin-enriched to prevent skin desiccation. Pediatrician and dermatologist approved.",
+  },
+  {
+    id: "17",
+    slug: "strands-conditioner",
+    nameAr: "ستراندز بلسم الأعشاب",
+    nameEn: "Strands of Herbs Conditioner",
+    category: "conditioner",
+    categoryLabel: "Conditioner",
+    categoryLabelAr: "بلسم",
+    volume: "300 ml",
+    shortDescription:
+      "Herbal-infused hair conditioner with rosemary, argan, and keratin for silky, strong hair.",
+    shortDescriptionAr:
+      "بلسم شعر منقوع بالأعشاب مع إكليل الجبل والأرغان والكيراتين لشعر حريري وقوي.",
+    longDescription:
+      "Strands of Herbs Conditioner is a premium botanical hair conditioning treatment that harnesses the power of nature's most effective hair-healing herbs. Enriched with Rosemary Extract, Argan Oil, Green Tea Extract, Keratin, and Panthenol, this conditioner deeply conditions while reducing breakage, adding incredible shine, and making hair more manageable. The herb-infused formula stimulates circulation in the scalp, nourishes roots, and provides lasting conditioning benefits from root to tip.",
+    longDescriptionAr:
+      "ستراندز بلسم الأعشاب هو علاج تكييف الشعر النباتي المتميز الذي يستغل قوة أكثر أعشاب شفاء الشعر فعالية في الطبيعة. مغني بمستخلص إكليل الجبل وزيت الأرغان ومستخلص الشاي الأخضر والكيراتين والبانثينول، يكيّف هذا البلسم بعمق بينما يقلل الكسر ويضيف لمعاناً رائعاً ويجعل الشعر أكثر قابلية للإدارة.",
+    tags: ["conditioner", "herbal", "rosemary", "argan", "keratin", "shine"],
+    tagsAr: ["بلسم", "أعشاب", "إكليل الجبل", "أرغان", "كيراتين", "لمعان"],
+    benefits: [
+      "Deeply conditions and softens hair",
+      "Reduces hair breakage by up to 50%",
+      "Adds brilliant shine and luminosity",
+      "Stimulates scalp circulation",
+      "Tames frizz and static",
+      "Detangles easily",
+      "Natural herbal fragrance",
+    ],
+    benefitsAr: [
+      "يكيّف الشعر ويليّنه بعمق",
+      "يقلل كسر الشعر بنسبة تصل إلى 50%",
+      "يضيف لمعاناً ونوراً رائعاً",
+      "يحفز الدورة الدموية لفروة الرأس",
+      "يروّض الشعر المجعد والكهربائي",
+      "يفك التشابك بسهولة",
+      "عطر أعشاب طبيعي",
+    ],
+    ingredients: [
+      {
+        id: "ing-36",
+        nameAr: "مستخلص إكليل الجبل",
+        nameEn: "Rosemary Extract",
+        description:
+          "Clinically proven to stimulate hair growth and improve scalp circulation.",
+        benefits: ["Hair growth", "Scalp circulation", "Antioxidant", "Antimicrobial"],
+        mechanism:
+          "Inhibits DHT locally and stimulates blood flow to hair follicles, promoting healthy growth.",
+        concentration: "3%",
+      },
+      {
+        id: "ing-37",
+        nameAr: "مستخلص الشاي الأخضر",
+        nameEn: "Green Tea Extract (EGCG)",
+        description: "Rich in polyphenols and EGCG that protect hair from oxidative damage.",
+        benefits: ["Antioxidant protection", "Scalp health", "Anti-inflammation"],
+        mechanism: "EGCG inhibits 5-alpha reductase and provides antioxidant protection to follicles.",
+        concentration: "2%",
+      },
+    ],
+    uses: [
+      "Normal to dry hair conditioning",
+      "Damaged and over-processed hair",
+      "Color-treated hair",
+      "Frizzy and unmanageable hair",
+      "Regular conditioning maintenance",
+    ],
+    usesAr: [
+      "تكييف الشعر الطبيعي إلى الجاف",
+      "الشعر التالف والمعالج بإفراط",
+      "الشعر المصبوغ",
+      "الشعر المجعد وصعب الإدارة",
+      "الصيانة المنتظمة للتكييف",
+    ],
+    directions: [
+      "Apply to clean damp hair after shampooing",
+      "Focus on mid-lengths to ends",
+      "Leave on for 3-5 minutes",
+      "For deep conditioning: leave 10-20 minutes",
+      "Rinse thoroughly with cool water for maximum shine",
+    ],
+    directionsAr: [
+      "ضعي على الشعر الرطب النظيف بعد الشامبو",
+      "ركزي على منتصف الشعر حتى الأطراف",
+      "اتركي لمدة 3-5 دقائق",
+      "للتكييف العميق: اتركي 10-20 دقيقة",
+      "اشطفي جيداً بالماء البارد للحصول على أقصى لمعان",
+    ],
+    warnings: ["Avoid contact with eyes", "Keep out of reach of children"],
+    warningsAr: ["تجنبي ملامسة العينين", "احفظي بعيداً عن متناول الأطفال"],
+    sideEffects: ["Very rarely: scalp sensitivity to specific botanical extracts"],
+    sideEffectsAr: ["نادراً جداً: حساسية فروة الرأس لمستخلصات نباتية محددة"],
+    storage: ["Store in a cool dry place", "Keep away from excessive heat"],
+    storageAr: ["يحفظ في مكان بارد وجاف", "يُبعد عن الحرارة الزائدة"],
+    faqs: [
+      {
+        question: "Can I use Strands Conditioner with Pedro Serum together?",
+        questionAr: "هل يمكنني استخدام ستراندز بلسم مع بيدرو سيروم معاً؟",
+        answer:
+          "Absolutely! Use Strands Conditioner in the shower, rinse, then apply Pedro Serum as a leave-in treatment for maximum hair health benefits.",
+        answerAr:
+          "بالتأكيد! استخدمي ستراندز بلسم في الدش، اشطفي، ثم ضعي بيدرو سيروم كعلاج يُترك في الشعر للحصول على أقصى فوائد لصحة الشعر.",
+      },
+    ],
+    relatedProducts: ["pedro-serum-150", "pedro-shampoo"],
+    discount: {
+      percentage: 20,
+      specialOffer: "Herbal Hair Trio: Shampoo + Conditioner + Serum 20% OFF",
+      specialOfferAr: "ثلاثي الأعشاب للشعر: شامبو + بلسم + سيروم بخصم 20%",
+      bonusProducts: ["Hair mask sample"],
+      campaignDetails: "Complete herbal hair care trio for transformative results.",
+      campaignDetailsAr: "ثلاثي العناية بالشعر بالأعشاب للحصول على نتائج تحويلية.",
+      originalPrice: "215 EGP",
+      discountedPrice: "172 EGP",
+    },
+    marketingContent:
+      "Nature's best secrets for beautiful hair. Strands of Herbs Conditioner transforms every strand.",
+    marketingContentAr:
+      "أفضل أسرار الطبيعة لشعر جميل. ستراندز بلسم الأعشاب يحوّل كل خصلة.",
+    medicalContent:
+      "Rosemary Extract 3% (clinically proven), EGCG 2%, Hydrolyzed Keratin 3%, Panthenol 5%. Sulfate-free compatible.",
+  },
+  {
+    id: "18",
+    slug: "sevapure-roll-on",
+    nameAr: "سيفابيور رول أون تفتيح",
+    nameEn: "Sevapure Whitening Roll On",
+    category: "deodorant",
+    categoryLabel: "Deodorant",
+    categoryLabelAr: "مزيل عرق",
+    shortDescription:
+      "Whitening roll-on deodorant with Kojic Acid and Alum for 48-hour protection and underarm brightening.",
+    shortDescriptionAr:
+      "مزيل عرق رول أون مفتح بحمض الكوجيك والشب لحماية 48 ساعة وتفتيح منطقة الإبط.",
+    longDescription:
+      "Sevapure Whitening Roll On is a premium dual-action deodorant that not only provides long-lasting odor and wetness protection but also actively brightens and evens the underarm skin tone. Formulated with Kojic Acid, Alpha Arbutin, Alum, and Soothing Aloe Vera, this alcohol-free roll-on visibly lightens dark underarm skin within 4 weeks of consistent use while keeping you fresh and confident all day. The gentle formula is suitable for sensitive skin and is dermatologically tested.",
+    longDescriptionAr:
+      "سيفابيور رول أون التفتيح هو مزيل عرق متميز ثنائي التأثير لا يوفر فقط حماية طويلة الأمد من الروائح والرطوبة بل يفتح أيضاً بشرة الإبط ويوحد لونها بشكل نشط. مصنوع بحمض الكوجيك والألفا أربوتين والشب والألوة فيرا المهدئة، يفتح هذا الرول أون الخالي من الكحول بشرة الإبط الداكنة بشكل مرئي خلال 4 أسابيع من الاستخدام المنتظم مع إبقائك منتعشة وواثقة طوال اليوم.",
+    tags: ["whitening", "deodorant", "kojic-acid", "underarm", "48-hour-protection"],
+    tagsAr: ["تفتيح", "مزيل عرق", "حمض الكوجيك", "إبط", "حماية 48 ساعة"],
+    benefits: [
+      "48-hour odor and wetness protection",
+      "Visibly lightens dark underarm skin",
+      "Alcohol-free gentle formula",
+      "Suitable for sensitive skin",
+      "Smooths and softens underarm skin",
+      "Fast-drying roll-on formula",
+      "Visible whitening results within 4 weeks",
+    ],
+    benefitsAr: [
+      "حماية 48 ساعة من الروائح والرطوبة",
+      "يفتح بشرة الإبط الداكنة بشكل مرئي",
+      "تركيبة لطيفة خالية من الكحول",
+      "مناسب للبشرة الحساسة",
+      "يلين ويطري بشرة الإبط",
+      "تركيبة رول أون سريعة الجفاف",
+      "نتائج تفتيح مرئية خلال 4 أسابيع",
+    ],
+    ingredients: [
+      {
+        id: "ing-38",
+        nameAr: "حمض الكوجيك",
+        nameEn: "Kojic Acid",
+        description: "Natural brightening agent that reduces melanin production for lighter skin.",
+        benefits: ["Brightening", "Melanin inhibition", "Even skin tone"],
+        mechanism: "Chelates copper needed by tyrosinase enzyme, reducing melanin synthesis.",
+        concentration: "1%",
+      },
+      {
+        id: "ing-39",
+        nameAr: "شب (كبريتات الأمونيوم الألومينية)",
+        nameEn: "Alum (Potassium Alum)",
+        description: "Natural mineral salt that acts as an effective aluminum-free deodorant.",
+        benefits: ["Odor control", "Antiperspirant", "Natural", "Gentle"],
+        mechanism: "Creates a temporary gel plug in sweat ducts reducing perspiration temporarily.",
+        concentration: "15%",
+      },
+    ],
+    uses: [
+      "Daily underarm deodorant use",
+      "Dark underarm brightening",
+      "Sensitive underarm skin care",
+      "Post-shaving underarm care",
+    ],
+    usesAr: [
+      "استخدام مزيل العرق اليومي تحت الإبط",
+      "تفتيح الإبط الداكن",
+      "العناية بالبشرة الحساسة تحت الإبط",
+      "العناية تحت الإبط بعد الحلاقة",
+    ],
+    directions: [
+      "Ensure underarm area is clean and dry",
+      "Apply 2-3 rolls to each underarm",
+      "Allow to dry for 30 seconds before dressing",
+      "Use daily for deodorant protection",
+      "For best whitening results: use consistently for at least 4 weeks",
+    ],
+    directionsAr: [
+      "تأكدي أن منطقة الإبط نظيفة وجافة",
+      "ضعي 2-3 لفات على كل إبط",
+      "اتركي تجف 30 ثانية قبل ارتداء الملابس",
+      "استخدمي يومياً للحصول على حماية مزيل العرق",
+      "للحصول على أفضل نتائج التفتيح: استخدمي باستمرار لمدة 4 أسابيع على الأقل",
+    ],
+    warnings: [
+      "For external use only",
+      "Do not apply to broken or irritated skin",
+      "Do not apply immediately after shaving — wait 24 hours",
+      "Keep out of reach of children",
+      "Avoid contact with eyes",
+    ],
+    warningsAr: [
+      "للاستخدام الخارجي فقط",
+      "لا تضعي على البشرة المكسورة أو المتهيجة",
+      "لا تضعي مباشرة بعد الحلاقة — انتظري 24 ساعة",
+      "احفظي بعيداً عن متناول الأطفال",
+      "تجنبي ملامسة العينين",
+    ],
+    sideEffects: [
+      "Rarely: skin sensitivity in allergic individuals",
+      "Mild redness after shaving — wait before applying",
+    ],
+    sideEffectsAr: [
+      "نادراً: حساسية البشرة لدى الأفراد المصابين بالحساسية",
+      "احمرار خفيف بعد الحلاقة — انتظري قبل التطبيق",
+    ],
+    storage: ["Store in a cool dry place", "Do not freeze", "Keep away from direct sunlight"],
+    storageAr: ["يحفظ في مكان بارد وجاف", "لا تجمدي", "يُبعد عن أشعة الشمس المباشرة"],
+    faqs: [
+      {
+        question: "When will I see whitening results?",
+        questionAr: "متى سأرى نتائج التفتيح؟",
+        answer:
+          "Most users notice gradual lightening within 2-4 weeks of daily consistent use. Full results are typically achieved within 6-8 weeks.",
+        answerAr:
+          "تلاحظ معظم المستخدمات تفتيحاً تدريجياً خلال 2-4 أسابيع من الاستخدام اليومي المنتظم. تتحقق النتائج الكاملة عادةً خلال 6-8 أسابيع.",
+      },
+    ],
+    relatedProducts: ["pedro-lightening-cream", "norgin-sunblock"],
+    discount: {
+      percentage: 20,
+      specialOffer: "Glow & Go Bundle: Roll On + Lightening Cream 20% OFF",
+      specialOfferAr: "باقة الإشراق والتنقل: رول أون + كريم تفتيح بخصم 20%",
+      bonusProducts: ["Body lotion sample"],
+      campaignDetails: "Complete underarm brightening and care bundle.",
+      campaignDetailsAr: "باقة كاملة لتفتيح والعناية بمنطقة الإبط.",
+      originalPrice: "110 EGP",
+      discountedPrice: "88 EGP",
+    },
+    marketingContent:
+      "Confidence you can feel. Sevapure Whitening Roll On delivers all-day freshness and a visibly brighter you.",
+    marketingContentAr:
+      "ثقة تشعرين بها. سيفابيور رول أون التفتيح يوفر انتعاشاً طوال اليوم وأنت أكثر إشراقاً بشكل مرئي.",
+    medicalContent:
+      "Kojic Acid 1%, Alpha Arbutin 1%, Potassium Alum 15%. Alcohol-free. Dermatologist tested. Suitable for sensitive skin.",
+  },
+];
+
+export const getProductBySlug = (slug: string): Product | undefined =>
+  products.find((p) => p.slug === slug);
+
+export const getRelatedProducts = (slugs: string[]): Product[] =>
+  products.filter((p) => slugs.includes(p.slug)).slice(0, 4);
+
+export const getProductsByCategory = (category: string): Product[] =>
+  products.filter((p) => p.category === category);
+
+export const getFeaturedProducts = (): Product[] =>
+  products.filter((p) => p.featured);
+
+export const searchProducts = (query: string): Product[] => {
+  const q = query.toLowerCase();
+  return products.filter(
+    (p) =>
+      p.nameEn.toLowerCase().includes(q) ||
+      p.nameAr.includes(q) ||
+      p.category.includes(q) ||
+      p.tags.some((t) => t.includes(q)) ||
+      p.tagsAr.some((t) => t.includes(q)) ||
+      p.ingredients.some(
+        (i) =>
+          i.nameEn.toLowerCase().includes(q) || i.nameAr.includes(q)
+      ) ||
+      p.benefits.some((b) => b.toLowerCase().includes(q)) ||
+      p.shortDescription.toLowerCase().includes(q)
+  );
+};
