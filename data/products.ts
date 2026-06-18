@@ -212,8 +212,8 @@ export const products: Product[] = [
         "Limited time offer. Valid for orders placed through our authorized distributors. Offer valid while stocks last.",
       campaignDetailsAr:
         "عرض لفترة محدودة. صالح للطلبات المقدمة من خلال موزعينا المعتمدين. العرض صالح حتى نفاد المخزون.",
-      originalPrice: "350 EGP",
-      discountedPrice: "280 EGP",
+      originalPrice: "215 EGP",
+      discountedPrice: "150 EGP",
     },
     marketingContent:
       "Transform your skincare routine with TREO Serum — the ultimate triple-action formula trusted by dermatologists. Visible results. Real science.",
@@ -390,8 +390,8 @@ export const products: Product[] = [
         "Purchase any Pedro hair care product and receive a complimentary travel-size item.",
       campaignDetailsAr:
         "اشتري أي منتج من مجموعة بيدرو للعناية بالشعر واحصلي على هدية مجانية بحجم السفر.",
-      originalPrice: "285 EGP",
-      discountedPrice: "242 EGP",
+      originalPrice: "220 EGP",
+      discountedPrice: "154.39 EGP",
     },
     marketingContent:
       "Professional salon results at home. Pedro Serum's advanced formula gives you the hair you've always dreamed of.",
@@ -633,8 +633,8 @@ export const products: Product[] = [
       bonusProducts: ["Pedro Serum sample"],
       campaignDetails: "Purchase shampoo and serum together and save 25%.",
       campaignDetailsAr: "اشتري الشامبو والسيروم معاً ووفري 25%.",
-      originalPrice: "195 EGP",
-      discountedPrice: "165 EGP",
+      originalPrice: "240 EGP",
+      discountedPrice: "168.24 EGP",
     },
     marketingContent:
       "Say goodbye to dandruff forever. Pedro Shampoo's powerful therapeutic formula delivers scalp freedom.",
@@ -924,8 +924,8 @@ export const products: Product[] = [
       bonusProducts: [],
       campaignDetails: "Women's intimate wellness promotion.",
       campaignDetailsAr: "عرض ترويجي لصحة المرأة الحميمة.",
-      originalPrice: "180 EGP",
-      discountedPrice: "153 EGP",
+      originalPrice: "145 EGP",
+      discountedPrice: "101.57 EGP",
     },
     marketingContent:
       "Experience complete intimate comfort. Pedro V.D maintains your natural balance with every use.",
@@ -1079,8 +1079,8 @@ export const products: Product[] = [
       bonusProducts: ["Cooling face mist"],
       campaignDetails: "Summer protection bundle — protect and brighten!",
       campaignDetailsAr: "باقة حماية الصيف — احمي وفتحي البشرة!",
-      originalPrice: "220 EGP",
-      discountedPrice: "165 EGP",
+      originalPrice: "200 EGP  250 EGP",
+      discountedPrice: "140.36 EGP 175.44 EGP",
     },
     marketingContent:
       "Your skin's best defense. Norgin Sun Block's advanced formula protects beautifully without compromise.",
@@ -1214,8 +1214,8 @@ export const products: Product[] = [
       bonusProducts: ["Vitamin C sachet"],
       campaignDetails: "Respiratory health bundle for winter season.",
       campaignDetailsAr: "باقة صحة الجهاز التنفسي لموسم الشتاء.",
-      originalPrice: "145 EGP",
-      discountedPrice: "130 EGP",
+      originalPrice: "57 EGP",
+      discountedPrice: "40 EGP",
     },
     marketingContent:
       "Breathe freely. Bellezza Ivy Syrup harnesses the ancient healing power of ivy for modern respiratory relief.",
@@ -1349,8 +1349,8 @@ export const products: Product[] = [
       bonusProducts: ["Calcium Magnesium sample"],
       campaignDetails: "Complete wellness bundle for optimal health.",
       campaignDetailsAr: "باقة صحة كاملة للصحة المثلى.",
-      originalPrice: "120 EGP",
-      discountedPrice: "102 EGP",
+      originalPrice: "90 EGP",
+      discountedPrice: "63.16 EGP",
     },
     marketingContent:
       "Sunshine in a capsule. Bellezza Vitamin D3 gives you the essential nutrient your body craves.",
@@ -1496,8 +1496,8 @@ export const products: Product[] = [
       bonusProducts: ["CoQ10 supplement sample"],
       campaignDetails: "Essential heart health combination.",
       campaignDetailsAr: "مجموعة صحة القلب الأساسية.",
-      originalPrice: "195 EGP",
-      discountedPrice: "156 EGP",
+      originalPrice: "105 EGP",
+      discountedPrice: "74 EGP",
     },
     marketingContent:
       "Fuel your heart, mind, and body. Bellezza Omega 3's ultra-pure formula delivers unmatched nutritional support.",
@@ -1783,7 +1783,7 @@ export const products: Product[] = [
     id: "13",
     slug: "suze-cream",
     nameAr: "سوز كريم",
-    nameEn: "Suez Cream",
+    nameEn: "Suze Cream",
     category: "cream",
     categoryLabel: "Cream",
     categoryLabelAr: "كريم",
@@ -1792,7 +1792,7 @@ export const products: Product[] = [
     shortDescriptionAr:
       "كريم مهدئ ومشفٍ بالكولاجين والألوة فيرا للبشرة الحساسة والمتهيجة أو التالفة.",
     longDescription:
-      "Suez Cream is a dermatologist-formulated therapeutic cream that combines the reparative power of Collagen, Allantoin, and Aloe Vera to heal, soothe, and restore compromised skin. Ideal for dry skin, eczema, psoriasis, minor burns, diaper rash, and post-procedure skin recovery, Suez Cream works by forming a protective barrier over damaged skin while delivering active healing ingredients. The rich yet fast-absorbing formula provides lasting relief without leaving greasy residue.",
+      "Suze Cream is a dermatologist-formulated therapeutic cream that combines the reparative power of Collagen, Allantoin, and Aloe Vera to heal, soothe, and restore compromised skin. Ideal for dry skin, eczema, psoriasis, minor burns, diaper rash, and post-procedure skin recovery, Suze Cream works by forming a protective barrier over damaged skin while delivering active healing ingredients. The rich yet fast-absorbing formula provides lasting relief without leaving greasy residue.",
     longDescriptionAr:
       "سوز كريم هو كريم علاجي طورته أطباء الجلد يجمع القوة الترميمية للكولاجين والألانتوين والألوة فيرا لشفاء البشرة المتضررة وتهدئتها واستعادتها. مثالي للبشرة الجافة والإكزيما والصدفية والحروق البسيطة وطفح الحفاض والتعافي من الإجراءات الجلدية.",
     tags: ["healing", "soothing", "collagen", "eczema", "sensitive-skin"],
@@ -1886,10 +1886,10 @@ export const products: Product[] = [
     storageAr: ["يحفظ أقل من 25 درجة مئوية", "يُغلق بإحكام بعد الاستخدام"],
     faqs: [
       {
-        question: "Can Suez Cream be used on babies?",
+        question: "Can Suze Cream be used on babies?",
         questionAr: "هل يمكن استخدام سوز كريم على الرضع؟",
         answer:
-          "Yes, Suez Cream is formulated to be gentle enough for infant and pediatric skin use, including for diaper rash.",
+          "Yes, Suze Cream is formulated to be gentle enough for infant and pediatric skin use, including for diaper rash.",
         answerAr:
           "نعم، سوز كريم مصنوع ليكون لطيفاً بما يكفي لاستخدام بشرة الرضع والأطفال، بما في ذلك طفح الحفاض.",
       },
@@ -1897,7 +1897,7 @@ export const products: Product[] = [
     relatedProducts: ["treo-serum", "baby-locca"],
     discount: {
       percentage: 15,
-      specialOffer: "Healing Bundle: Suez Cream + Baby Locca 15% OFF",
+      specialOffer: "Healing Bundle: Suze Cream + Baby Locca 15% OFF",
       specialOfferAr: "باقة الشفاء: سوز كريم + بيبي لوكا بخصم 15%",
       bonusProducts: ["Healing gauze pack"],
       campaignDetails: "Complete skin healing and care bundle.",
@@ -1906,7 +1906,7 @@ export const products: Product[] = [
       discountedPrice: "157 EGP",
     },
     marketingContent:
-      "When skin needs healing, choose Suez Cream. Nature-inspired science for total skin repair.",
+      "When skin needs healing, choose Suze Cream. Nature-inspired science for total skin repair.",
     marketingContentAr:
       "عندما تحتاج البشرة للشفاء، اختاري سوز كريم. علم مستوحى من الطبيعة لإصلاح البشرة الكامل.",
     medicalContent:

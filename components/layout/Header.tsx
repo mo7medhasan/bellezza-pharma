@@ -18,6 +18,7 @@ import {
 import { useSearch } from "@/hooks/useSearch";
 import { products } from "@/data/products";
 import { categoryIcons } from "@/lib/utils";
+import Image from "next/image";
 
 export function Header() {
   const { theme, setTheme } = useTheme();
@@ -63,10 +64,11 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="left" className="p-0 w-72">
             <SheetHeader className="p-4 bg-gradient-to-r from-pharma-600 to-pharma-700">
-              <SheetTitle className="text-white flex items-center gap-2">
-                <FlaskConical className="w-5 h-5" />
-                Bellezza Pharma
-              </SheetTitle>
+              {/* <SheetTitle className="text-white flex items-center gap-2">
+
+              </SheetTitle> */}
+              <Image src="/logo.jpg" alt="Bellezza Pharma Logo" width={32} height={32} className="rounded-full" />
+              <span className="ml-2 text-white font-bold text-lg">Bellezza Pharma</span>
             </SheetHeader>
             <nav className="p-4 space-y-1 overflow-y-auto h-[calc(100vh-80px)]">
               <Link
@@ -103,13 +105,8 @@ export function Header() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-pharma-500 to-pharma-700 flex items-center justify-center shadow-sm">
-            <FlaskConical className="w-4 h-4 text-white" />
-          </div>
-          <div className="hidden sm:block">
-            <span className="font-bold text-foreground tracking-tight">Bellezza</span>
-            <span className="font-light text-pharma-600 ml-1 tracking-tight">Pharma</span>
-          </div>
+        <Image src="/logo.jpg" alt="Bellezza Pharma Logo" width={200} height={120} className="rounded-full object-cover overflow-hidden h-24 " />
+              {/* <span className="ml-2 text-white font-bold text-lg">Bellezza Pharma</span> */}
         </Link>
 
         {/* Center nav */}

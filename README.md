@@ -52,7 +52,7 @@ A production-ready Next.js 15 pharmaceutical product website for **Bellezza Phar
 | 10 | Bellezza Omega 3 | Supplement |
 | 11 | VitaPro | Multivitamin |
 | 12 | Jackstril Facial Wash | Facial Wash |
-| 13 | Suez Cream | Cream |
+| 13 | Suze Cream | Cream |
 | 14 | Pedro Mouth Spray | Oral Care |
 | 15 | Pedro Vaginal Douche | Feminine Care |
 | 16 | Baby Locca Ethyl Alcohol | Baby Care |
