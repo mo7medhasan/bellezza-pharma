@@ -2,19 +2,19 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Award, Sparkles, FlaskConical } from "lucide-react";
+import { ArrowRight, ShieldCheck, Award, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const stats = [
   { value: "18+", label: "Premium Products", labelAr: "منتج متميز" },
   { value: "100%", label: "Quality Tested", labelAr: "مختبر الجودة" },
   { value: "6", label: "Categories", labelAr: "فئة" },
-  { value: "FDA", label: "Standards Met", labelAr: "معايير مستوفاة" },
+  { value: "2015", label: "EST. Cairo, Egypt", labelAr: "القاهرة، مصر" },
 ];
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-pharma-950 via-pharma-900 to-pharma-800 dark:from-pharma-950 dark:via-pharma-900/80 dark:to-pharma-800/60 text-white">
+    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-pharma-950 via-red-950 to-pharma-900 dark:from-pharma-950 dark:via-pharma-900/90 dark:to-pharma-900/60 text-white">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-pharma-500/10 blur-3xl" />
@@ -53,16 +53,16 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-4">
-              Science Meets{" "}
-              <span className="bg-gradient-to-r from-gold-300 to-gold-500 bg-clip-text text-transparent">
-                Beauty
+              Inspire{" "}
+              <span className="bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
+                Confidence
               </span>
             </h1>
             <h2
               className="text-2xl md:text-3xl font-bold text-pharma-200 font-arabic mb-6"
               dir="rtl"
             >
-              العلم يلتقي بالجمال
+              نُلهم الثقة — بيلزا فارما
             </h2>
           </motion.div>
 
@@ -102,7 +102,7 @@ export function HeroSection() {
               asChild
             >
               <Link href="#products">
-                <FlaskConical className="w-5 h-5" />
+                <ShieldCheck className="w-5 h-5" />
                 Our Formulas
               </Link>
             </Button>
@@ -118,7 +118,7 @@ export function HeroSection() {
             {[
               { icon: ShieldCheck, text: "Dermatologically Tested" },
               { icon: Award, text: "Clinically Validated" },
-              { icon: FlaskConical, text: "Pharma Grade Quality" },
+              { icon: ShieldCheck, text: "Pharma Grade Quality" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-pharma-200">
                 <Icon className="w-4 h-4 text-gold-300" />

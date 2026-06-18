@@ -17,7 +17,7 @@ export function capitalize(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-export const DISCOUNT_PASSWORD = "638527";
+export const DISCOUNT_PASSWORD = "123456";
 
 export function validateDiscountPassword(input: string): boolean {
   return input === DISCOUNT_PASSWORD;

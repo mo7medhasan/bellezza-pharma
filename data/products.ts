@@ -1783,7 +1783,7 @@ export const products: Product[] = [
     id: "13",
     slug: "suze-cream",
     nameAr: "سوز كريم",
-    nameEn: "Suze Cream",
+    nameEn: "Suez Cream",
     category: "cream",
     categoryLabel: "Cream",
     categoryLabelAr: "كريم",
@@ -1792,7 +1792,7 @@ export const products: Product[] = [
     shortDescriptionAr:
       "كريم مهدئ ومشفٍ بالكولاجين والألوة فيرا للبشرة الحساسة والمتهيجة أو التالفة.",
     longDescription:
-      "Suze Cream is a dermatologist-formulated therapeutic cream that combines the reparative power of Collagen, Allantoin, and Aloe Vera to heal, soothe, and restore compromised skin. Ideal for dry skin, eczema, psoriasis, minor burns, diaper rash, and post-procedure skin recovery, Suze Cream works by forming a protective barrier over damaged skin while delivering active healing ingredients. The rich yet fast-absorbing formula provides lasting relief without leaving greasy residue.",
+      "Suez Cream is a dermatologist-formulated therapeutic cream that combines the reparative power of Collagen, Allantoin, and Aloe Vera to heal, soothe, and restore compromised skin. Ideal for dry skin, eczema, psoriasis, minor burns, diaper rash, and post-procedure skin recovery, Suez Cream works by forming a protective barrier over damaged skin while delivering active healing ingredients. The rich yet fast-absorbing formula provides lasting relief without leaving greasy residue.",
     longDescriptionAr:
       "سوز كريم هو كريم علاجي طورته أطباء الجلد يجمع القوة الترميمية للكولاجين والألانتوين والألوة فيرا لشفاء البشرة المتضررة وتهدئتها واستعادتها. مثالي للبشرة الجافة والإكزيما والصدفية والحروق البسيطة وطفح الحفاض والتعافي من الإجراءات الجلدية.",
     tags: ["healing", "soothing", "collagen", "eczema", "sensitive-skin"],
@@ -1886,10 +1886,10 @@ export const products: Product[] = [
     storageAr: ["يحفظ أقل من 25 درجة مئوية", "يُغلق بإحكام بعد الاستخدام"],
     faqs: [
       {
-        question: "Can Suze Cream be used on babies?",
+        question: "Can Suez Cream be used on babies?",
         questionAr: "هل يمكن استخدام سوز كريم على الرضع؟",
         answer:
-          "Yes, Suze Cream is formulated to be gentle enough for infant and pediatric skin use, including for diaper rash.",
+          "Yes, Suez Cream is formulated to be gentle enough for infant and pediatric skin use, including for diaper rash.",
         answerAr:
           "نعم، سوز كريم مصنوع ليكون لطيفاً بما يكفي لاستخدام بشرة الرضع والأطفال، بما في ذلك طفح الحفاض.",
       },
@@ -1897,7 +1897,7 @@ export const products: Product[] = [
     relatedProducts: ["treo-serum", "baby-locca"],
     discount: {
       percentage: 15,
-      specialOffer: "Healing Bundle: Suze Cream + Baby Locca 15% OFF",
+      specialOffer: "Healing Bundle: Suez Cream + Baby Locca 15% OFF",
       specialOfferAr: "باقة الشفاء: سوز كريم + بيبي لوكا بخصم 15%",
       bonusProducts: ["Healing gauze pack"],
       campaignDetails: "Complete skin healing and care bundle.",
@@ -1906,7 +1906,7 @@ export const products: Product[] = [
       discountedPrice: "157 EGP",
     },
     marketingContent:
-      "When skin needs healing, choose Suze Cream. Nature-inspired science for total skin repair.",
+      "When skin needs healing, choose Suez Cream. Nature-inspired science for total skin repair.",
     marketingContentAr:
       "عندما تحتاج البشرة للشفاء، اختاري سوز كريم. علم مستوحى من الطبيعة لإصلاح البشرة الكامل.",
     medicalContent:

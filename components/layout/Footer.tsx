@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FlaskConical, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,12 +9,13 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-pharma-500 to-pharma-700 flex items-center justify-center">
-                <FlaskConical className="w-5 h-5 text-white" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-pharma-600 to-pharma-800 flex items-center justify-center font-serif italic text-white text-2xl font-black leading-none select-none shadow-sm">
+                B
               </div>
               <div>
                 <p className="font-bold text-foreground">Bellezza Pharma</p>
                 <p className="text-xs text-muted-foreground">بيلزا فارما</p>
+              <p className="text-xs text-pharma-600 font-medium tracking-widest mt-0.5 italic">EST 2015 · Inspire confidence</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
