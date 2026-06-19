@@ -16,7 +16,7 @@ interface DiscountCardProps {
 export function DiscountCard({ discount }: DiscountCardProps) {
   const { isUnlocked, password, error, isAnimating, setPassword, unlock } =
     useDiscount();
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") unlock();

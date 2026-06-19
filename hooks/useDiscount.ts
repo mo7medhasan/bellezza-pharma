@@ -14,7 +14,7 @@ interface UseDiscountReturn {
 }
 
 export function useDiscount(): UseDiscountReturn {
-  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [isUnlocked, setIsUnlocked] = useState(true);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
