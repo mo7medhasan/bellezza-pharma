@@ -46,6 +46,9 @@ export interface Product {
   slug: string;
   nameAr: string;
   nameEn: string;
+  image: string;
+  images: string[];
+  price: string;
   shortDescription: string;
   shortDescriptionAr: string;
   longDescription: string;

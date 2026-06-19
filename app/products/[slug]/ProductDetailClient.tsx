@@ -19,12 +19,13 @@ import { Separator } from "@/components/ui/separator";
 import { AudioButton } from "@/components/product/AudioButton";
 import { ImagePlaceholder } from "@/components/product/ImagePlaceholder";
 import { IngredientCard } from "@/components/product/IngredientCard";
-import { DiscountCard } from "@/components/product/DiscountCard";
+// import { DiscountCard } from "@/components/product/DiscountCard";
 import { FAQSection } from "@/components/product/FAQSection";
 import { WarningsSection } from "@/components/product/WarningsSection";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { categoryColors, categoryIcons } from "@/lib/utils";
 import type { Product } from "@/types/product";
+import Image from "next/image";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -46,18 +47,23 @@ export function ProductDetailClient({
       >
         {/* Image */}
         <div className="relative">
-          <ImagePlaceholder
-            productName={product.nameEn}
-            className="w-full max-w-md mx-auto"
-          />
-          {product.featured && (
-            <div className="absolute top-4 left-4">
-              <Badge variant="gold" className="shadow-md">
-                <Star className="w-3 h-3 mr-1 fill-current" />
-                Featured Product
-              </Badge>
-            </div>
+          {product.image? (
+            <Image
+              src={product.image}
+              alt={product.nameEn}
+              width={500}
+              height={500}
+              quality={90}
+              priority
+              className="rounded-2xl object-cover w-full max-w-md mx-auto"
+            />
+          ): (
+            <ImagePlaceholder
+              productName={product.nameEn}
+              className="w-full max-w-md mx-auto"
+            />
           )}
+         
         </div>
 
         {/* Product info */}
@@ -98,6 +104,13 @@ export function ProductDetailClient({
                 className="shrink-0"
               />
             </div>
+          </div>
+
+          {/* Price */}
+          <div className="flex items-center gap-3">
+            <span className="text-2xl font-bold text-foreground">
+           Price:   {product.price}
+            </span>
           </div>
 
           {/* Volume/Weight */}
@@ -154,7 +167,7 @@ export function ProductDetailClient({
           </div>
 
           {/* Discount card */}
-          <DiscountCard discount={product.discount} />
+          {/* <DiscountCard discount={product.discount} /> */}
         </div>
       </motion.div>
 

@@ -9,6 +9,7 @@ import { ImagePlaceholder } from "@/components/product/ImagePlaceholder";
 import { AudioButton } from "@/components/product/AudioButton";
 import { categoryColors, categoryIcons } from "@/lib/utils";
 import type { Product } from "@/types/product";
+import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
@@ -36,19 +37,31 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         )}
 
         {/* Discount badge */}
-        <div className="absolute top-3 right-3 z-10">
+        {/* <div className="absolute top-3 right-3 z-10">
           <div className="w-10 h-10 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center shadow-md">
             -{product.discount.percentage}%
           </div>
-        </div>
+        </div> */}
 
         {/* Image */}
         <div className="relative p-4 pb-0">
           <Link href={`/products/${product.slug}`} tabIndex={-1} aria-hidden>
-            <ImagePlaceholder
-              productName={product.nameEn}
-              className="group-hover:scale-[1.02] transition-transform duration-300"
-            />
+            {product.image ? (
+              <Image
+                width={500}
+                height={500}
+                quality={90}
+                priority
+                src={product.image}
+                alt={product.nameEn}
+                className="group-hover:scale-[1.02] transition-transform duration-300 rounded-2xl object-cover w-full max-w-md h-auto"
+              />
+            ) : (
+              <ImagePlaceholder
+                productName={product.nameEn}
+                className="group-hover:scale-[1.02] transition-transform duration-300 rounded-2xl object-cover w-full max-w-md mx-auto"
+              />
+            )}
           </Link>
         </div>
 
@@ -66,7 +79,10 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           {/* Names + Audio */}
           <div>
             <div className="flex items-start justify-between gap-2">
-              <Link href={`/products/${product.slug}`} className="flex-1 group/link">
+              <Link
+                href={`/products/${product.slug}`}
+                className="flex-1 group/link"
+              >
                 <h3 className="font-bold text-base text-foreground group-hover/link:text-pharma-600 transition-colors line-clamp-1">
                   {product.nameEn}
                 </h3>
@@ -79,17 +95,19 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               />
             </div>
             <div className="flex items-center gap-2 mt-0.5">
-              <p className="text-sm text-muted-foreground font-arabic" dir="rtl">
+              <p
+                className="text-sm text-muted-foreground font-arabic"
+                dir="rtl"
+              >
                 {product.nameAr}
               </p>
-              <AudioButton
-                text={product.nameAr}
-                lang="ar-SA"
-                variant="icon"
-              />
+              <AudioButton text={product.nameAr} lang="ar-SA" variant="icon" />
             </div>
           </div>
-
+{/* price */}
+          <p className="text-lg font-semibold text-foreground">
+          price:  {product.price}
+          </p>
           {/* Description */}
           <p className="text-sm text-muted-foreground line-clamp-2 flex-1">
             {product.shortDescription}
@@ -117,7 +135,12 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           </div>
 
           {/* CTA */}
-          <Button variant="pharma" size="sm" className="w-full mt-1 group/btn" asChild>
+          <Button
+            variant="pharma"
+            size="sm"
+            className="w-full mt-1 group/btn"
+            asChild
+          >
             <Link href={`/products/${product.slug}`}>
               View Details
               <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
