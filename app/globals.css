@@ -123,3 +123,12 @@
 @media print {
   .no-print { display: none !important; }
 }
+
+/* Arabic-first layout */
+body {
+  font-family: var(--font-cairo), "Cairo", system-ui, sans-serif;
+}
+
+.font-arabic {
+  font-family: var(--font-cairo), "Cairo", system-ui, sans-serif;
+}

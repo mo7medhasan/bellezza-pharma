@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowLeft, Star, Tag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ImagePlaceholder } from "@/components/product/ImagePlaceholder";
@@ -26,24 +26,18 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       className="group"
     >
       <div className="relative h-full flex flex-col rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden">
-        {/* Featured badge */}
         {product.featured && (
-          <div className="absolute top-3 left-3 z-10">
-            <Badge variant="gold" className="text-xs font-semibold shadow-sm">
-              <Star className="w-3 h-3 mr-1 fill-current" />
-              Featured
+          <div className="absolute top-3 right-3 z-10">
+            <Badge
+              variant="gold"
+              className="text-xs font-semibold shadow-sm font-arabic"
+            >
+              <Star className="w-3 h-3 ml-1 fill-current" />
+              مميز
             </Badge>
           </div>
         )}
 
-        {/* Discount badge */}
-        {/* <div className="absolute top-3 right-3 z-10">
-          <div className="w-10 h-10 rounded-full bg-red-500 text-white text-xs font-bold flex items-center justify-center shadow-md">
-            -{product.discount.percentage}%
-          </div>
-        </div> */}
-
-        {/* Image */}
         <div className="relative p-4 pb-0">
           <Link href={`/products/${product.slug}`} tabIndex={-1} aria-hidden>
             {product.image ? (
@@ -65,69 +59,70 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           </Link>
         </div>
 
-        {/* Content */}
         <div className="flex flex-col flex-1 p-5 gap-3">
           {/* Category */}
           <span
-            className={`text-xs font-semibold px-2.5 py-1 rounded-full w-fit ${
-              categoryColors[product.category] || categoryColors.serum
-            }`}
+            className={`text-xs font-semibold px-2.5 py-1 rounded-full w-fit font-arabic ${categoryColors[product.category] || categoryColors.serum}`}
           >
-            {categoryIcons[product.category]} {product.categoryLabel}
+            {categoryIcons[product.category]} {product.categoryLabelAr}
           </span>
 
-          {/* Names + Audio */}
+          {/* Arabic name + audio */}
           <div>
             <div className="flex items-start justify-between gap-2">
               <Link
                 href={`/products/${product.slug}`}
                 className="flex-1 group/link"
               >
-                <h3 className="font-bold text-base text-foreground group-hover/link:text-pharma-600 transition-colors line-clamp-1">
-                  {product.nameEn}
+                <h3 className="font-bold text-base text-foreground group-hover/link:text-pharma-600 transition-colors line-clamp-1 font-arabic">
+                  {product.nameAr}
                 </h3>
               </Link>
               <AudioButton
-                text={product.nameEn}
-                lang="en-US"
+                text={product.nameAr}
+                lang="ar-SA"
                 variant="icon"
                 className="flex-shrink-0 mt-0.5"
               />
             </div>
+            {/* English name + audio */}
             <div className="flex items-center gap-2 mt-0.5">
-              <p
-                className="text-sm text-muted-foreground font-arabic"
-                dir="rtl"
-              >
-                {product.nameAr}
+              <p className="text-xs text-muted-foreground" dir="ltr">
+                {product.nameEn}
               </p>
-              <AudioButton text={product.nameAr} lang="ar-SA" variant="icon" />
+              <AudioButton text={product.nameEn} lang="en-US" variant="icon" />
             </div>
           </div>
-{/* price */}
           <p className="text-lg font-semibold text-foreground">
-          price:  {product.price}
-          </p>
-          {/* Description */}
-          <p className="text-sm text-muted-foreground line-clamp-2 flex-1">
-            {product.shortDescription}
+            price: {product.price}
           </p>
 
-          {/* Volume/Weight */}
-          {(product.volume || product.weight) && (
-            <div className="flex items-center gap-1">
-              <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-md">
+          {/* Short description Arabic */}
+          <p className="text-sm text-muted-foreground line-clamp-2 flex-1 font-arabic">
+            {product.shortDescriptionAr}
+          </p>
+
+          {/* Volume + Price */}
+          <div className="flex items-center justify-between">
+            {(product.volume || product.weight) && (
+              <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-md font-arabic">
                 {product.volume || product.weight}
               </span>
+            )}
+            <div className="flex items-center gap-1 mr-auto">
+              <Tag className="w-3.5 h-3.5 text-pharma-600" />
+              <span className="text-sm font-black text-pharma-600">
+                {product.price}
+              </span>
             </div>
-          )}
+          </div>
 
           {/* Benefits preview */}
           <div className="flex flex-wrap gap-1">
-            {product.benefits.slice(0, 2).map((b, i) => (
+            {product.benefitsAr.slice(0, 2).map((b, i) => (
               <span
                 key={i}
-                className="text-xs text-pharma-700 dark:text-pharma-300 bg-pharma-50 dark:bg-pharma-900/30 px-2 py-0.5 rounded-full"
+                className="text-xs text-pharma-700 dark:text-pharma-300 bg-pharma-50 dark:bg-pharma-900/30 px-2 py-0.5 rounded-full font-arabic"
               >
                 {b.length > 28 ? b.slice(0, 26) + "…" : b}
               </span>
@@ -138,12 +133,12 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           <Button
             variant="pharma"
             size="sm"
-            className="w-full mt-1 group/btn"
+            className="w-full mt-1 group/btn font-arabic"
             asChild
           >
             <Link href={`/products/${product.slug}`}>
-              View Details
-              <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+              عرض التفاصيل
+              <ArrowLeft className="w-4 h-4 group-hover/btn:-translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>

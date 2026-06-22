@@ -15,31 +15,10 @@ export interface FAQ {
   answerAr: string;
 }
 
-export interface Discount {
-  percentage: number;
-  specialOffer: string;
-  specialOfferAr: string;
-  bonusProducts: string[];
-  campaignDetails: string;
-  campaignDetailsAr: string;
-  originalPrice?: string;
-  discountedPrice?: string;
-}
-
 export type ProductCategory =
-  | "serum"
-  | "shampoo"
-  | "cream"
-  | "supplement"
-  | "oral-care"
-  | "feminine-care"
-  | "baby-care"
-  | "sunscreen"
-  | "conditioner"
-  | "deodorant"
-  | "facial-wash"
-  | "syrup"
-  | "solution";
+  | "serum" | "shampoo" | "cream" | "supplement" | "oral-care"
+  | "feminine-care" | "baby-care" | "sunscreen" | "conditioner"
+  | "deodorant" | "facial-wash" | "syrup" | "solution";
 
 export interface Product {
   id: string;
@@ -73,7 +52,6 @@ export interface Product {
   storageAr: string[];
   faqs: FAQ[];
   relatedProducts: string[];
-  discount: Discount;
   marketingContent: string;
   marketingContentAr: string;
   medicalContent: string;

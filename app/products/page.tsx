@@ -4,9 +4,8 @@ import { Sidebar } from "@/components/layout/Sidebar";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "All Products",
-  description:
-    "Browse all Bellezza Pharma products — premium serums, creams, supplements, hair care, and more.",
+  title: "جميع المنتجات | بيلزا فارما",
+  description: "تصفح جميع منتجات بيلزا فارما — سيروم، كريمات، مكملات، عناية بالشعر والمزيد.",
 };
 
 export default function ProductsPage() {
@@ -15,22 +14,12 @@ export default function ProductsPage() {
       <div className="flex gap-8">
         <Sidebar />
         <div className="flex-1 min-w-0">
-          {/* Page header */}
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-foreground">All Products</h1>
-            <p className="text-muted-foreground mt-1">
-              {products.length} premium pharmaceutical products
-            </p>
-            <p className="text-muted-foreground font-arabic mt-1" dir="rtl">
-              {products.length} منتج صيدلاني متميز
-            </p>
+          <div className="mb-8 text-right">
+            <h1 className="text-3xl font-bold text-foreground font-arabic">جميع المنتجات</h1>
+            <p className="text-muted-foreground mt-1 font-arabic">{products.length} منتج صيدلاني متميز</p>
           </div>
-
-          {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {products.map((product, index) => (
-              <ProductCard key={product.id} product={product} index={index} />
-            ))}
+            {products.map((product, index) => <ProductCard key={product.id} product={product} index={index} />)}
           </div>
         </div>
       </div>
