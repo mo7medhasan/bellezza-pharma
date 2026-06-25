@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug);
   if (!product) return { title: "المنتج غير موجود" };
   return {
-    title: `${product.nameAr} — ${product.categoryLabelAr}`,
-    description: product.shortDescriptionAr,
-    keywords: [product.nameAr, product.nameEn, product.categoryLabelAr, ...product.tagsAr, ...product.ingredients.map((i) => i.nameAr), "بيلزا فارما"],
+    title: `${product.nameAr} — ${product.categoryLabel}`,
+    description: product.shortDescription,
+    keywords: [product.nameAr, product.nameEn, product.categoryLabel, ...product.tags, ...product.ingredients.map((i) => i.nameAr), "بيلزا فارما"],
     openGraph: {
       title: `${product.nameAr} | بيلزا فارما`,
-      description: product.shortDescriptionAr,
+      description: product.shortDescription,
       type: "website",
     },
   };
@@ -40,9 +40,9 @@ export default async function ProductPage({ params }: Props) {
     "@type": "Product",
     name: product.nameAr,
     alternateName: product.nameEn,
-    description: product.shortDescriptionAr,
+    description: product.shortDescription,
     brand: { "@type": "Brand", name: "Bellezza Pharma — بيلزا فارما" },
-    category: product.categoryLabelAr,
+    category: product.categoryLabel,
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",

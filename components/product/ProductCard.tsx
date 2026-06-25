@@ -64,7 +64,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           <span
             className={`text-xs font-semibold px-2.5 py-1 rounded-full w-fit font-arabic ${categoryColors[product.category] || categoryColors.serum}`}
           >
-            {categoryIcons[product.category]} {product.categoryLabelAr}
+            {categoryIcons[product.category]} {product.categoryLabel}
           </span>
 
           {/* Arabic name + audio */}
@@ -99,7 +99,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
 
           {/* Short description Arabic */}
           <p className="text-sm text-muted-foreground line-clamp-2 flex-1 font-arabic">
-            {product.shortDescriptionAr}
+            {product.shortDescription}
           </p>
 
           {/* Volume + Price */}
@@ -119,7 +119,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
 
           {/* Benefits preview */}
           <div className="flex flex-wrap gap-1">
-            {product.benefitsAr.slice(0, 2).map((b, i) => (
+            {product.benefits.slice(0, 2).map((b, i) => (
               <span
                 key={i}
                 className="text-xs text-pharma-700 dark:text-pharma-300 bg-pharma-50 dark:bg-pharma-900/30 px-2 py-0.5 rounded-full font-arabic"

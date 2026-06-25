@@ -10,9 +10,7 @@ export interface Ingredient {
 
 export interface FAQ {
   question: string;
-  questionAr: string;
   answer: string;
-  answerAr: string;
 }
 
 export type ProductCategory =
@@ -29,31 +27,20 @@ export interface Product {
   images: string[];
   price: string;
   shortDescription: string;
-  shortDescriptionAr: string;
   longDescription: string;
-  longDescriptionAr: string;
   category: ProductCategory;
   categoryLabel: string;
-  categoryLabelAr: string;
   tags: string[];
-  tagsAr: string[];
   benefits: string[];
-  benefitsAr: string[];
   ingredients: Ingredient[];
   uses: string[];
-  usesAr: string[];
   directions: string[];
-  directionsAr: string[];
   warnings: string[];
-  warningsAr: string[];
   sideEffects: string[];
-  sideEffectsAr: string[];
   storage: string[];
-  storageAr: string[];
   faqs: FAQ[];
   relatedProducts: string[];
   marketingContent: string;
-  marketingContentAr: string;
   medicalContent: string;
   volume?: string;
   weight?: string;

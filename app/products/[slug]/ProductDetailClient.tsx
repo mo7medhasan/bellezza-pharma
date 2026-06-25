@@ -49,7 +49,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
         <div className="space-y-5 order-1 lg:order-2">
           {/* Category */}
           <span className={`inline-flex items-center gap-1.5 text-sm font-semibold px-3 py-1.5 rounded-full font-arabic ${categoryColors[product.category] || ""}`}>
-            {categoryIcons[product.category]} {product.categoryLabelAr}
+            {categoryIcons[product.category]} {product.categoryLabel}
           </span>
 
           {/* Arabic name + audio */}
@@ -84,12 +84,12 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
 
           {/* Arabic description */}
           <div>
-            <p className="text-base text-muted-foreground leading-relaxed font-arabic">{product.shortDescriptionAr}</p>
+            <p className="text-base text-muted-foreground leading-relaxed font-arabic">{product.shortDescription}</p>
           </div>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 justify-end">
-            {product.tagsAr.map((tag) => (
+            {product.tags.map((tag) => (
               <Badge key={tag} variant="outline" className="text-xs font-arabic">{tag}</Badge>
             ))}
           </div>
@@ -101,14 +101,14 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
               <Sparkles className="w-4 h-4 text-pharma-600" />
             </h3>
             <ul className="space-y-2">
-              {product.benefitsAr.slice(0, 4).map((b, i) => (
+              {product.benefits.slice(0, 4).map((b, i) => (
                 <li key={i} className="flex items-start gap-2 justify-end">
                   <span className="text-sm text-foreground font-arabic">{b}</span>
                   <CheckCircle2 className="w-4 h-4 text-pharma-500 mt-0.5 shrink-0" />
                 </li>
               ))}
-              {product.benefitsAr.length > 4 && (
-                <li className="text-xs text-pharma-600 pr-6 font-arabic">+{product.benefitsAr.length - 4} فائدة أخرى ↓</li>
+              {product.benefits.length > 4 && (
+                <li className="text-xs text-pharma-600 pr-6 font-arabic">+{product.benefits.length - 4} فائدة أخرى ↓</li>
               )}
             </ul>
           </div>
@@ -142,7 +142,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
           <TabsContent value="overview" className="space-y-8 mt-0">
             <div>
               <h3 className="text-lg font-bold text-foreground mb-3 font-arabic">عن هذا المنتج</h3>
-              <p className="text-muted-foreground leading-relaxed font-arabic">{product.longDescriptionAr}</p>
+              <p className="text-muted-foreground leading-relaxed font-arabic">{product.longDescription}</p>
             </div>
 
             <div>
@@ -151,7 +151,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
                 <CheckCircle2 className="w-5 h-5 text-pharma-500" />
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {product.benefitsAr.map((benefit, i) => (
+                {product.benefits.map((benefit, i) => (
                   <motion.div key={i} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
                     className="flex items-start gap-3 p-3 rounded-xl bg-card border border-border hover:border-pharma-200 dark:hover:border-pharma-800 transition-colors justify-end">
@@ -165,7 +165,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
             <div>
               <h3 className="text-lg font-bold text-foreground mb-4 font-arabic">الاستخدامات الطبية</h3>
               <div className="space-y-2">
-                {product.usesAr.map((use, i) => (
+                {product.uses.map((use, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 justify-end">
                     <p className="text-sm text-foreground font-arabic">{use}</p>
                     <span className="w-5 h-5 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center shrink-0 mt-0.5 font-bold">{i + 1}</span>
@@ -200,7 +200,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
             <div>
               <h3 className="text-lg font-bold text-foreground mb-4 font-arabic">طريقة الاستخدام</h3>
               <div className="space-y-3">
-                {product.directionsAr.map((step, i) => (
+                {product.directions.map((step, i) => (
                   <motion.div key={i} initial={{ opacity: 0, x: 15 }} animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.08 }}
                     className="flex gap-4 p-4 rounded-xl bg-card border border-border hover:border-pharma-200 dark:hover:border-pharma-800 transition-colors justify-end">
@@ -214,7 +214,7 @@ export function ProductDetailClient({ product, relatedProducts }: Props) {
 
           {/* WARNINGS */}
           <TabsContent value="warnings" className="space-y-6 mt-0">
-            <WarningsSection warningsAr={product.warningsAr} sideEffectsAr={product.sideEffectsAr} storageAr={product.storageAr} />
+            <WarningsSection warnings={product.warnings} sideEffects={product.sideEffects} storage={product.storage} />
           </TabsContent>
 
           {/* FAQ */}

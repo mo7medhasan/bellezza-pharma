@@ -47,10 +47,9 @@ export function SearchPageClient({ initialQuery }: { initialQuery: string }) {
       const q = query.toLowerCase();
       filtered = filtered.filter((p) =>
         p.nameEn.toLowerCase().includes(q) || p.nameAr.includes(q) ||
-        p.category.toLowerCase().includes(q) || p.categoryLabelAr.includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q)) || p.tagsAr.some((t) => t.includes(q)) ||
-        p.ingredients.some((i) => i.nameEn.toLowerCase().includes(q) || i.nameAr.includes(q)) ||
-        p.benefitsAr.some((b) => b.includes(q)) || p.shortDescriptionAr.includes(q)
+        p.category.toLowerCase().includes(q) ||
+        p.tags.some((t) => t.toLowerCase().includes(q)) ||
+        p.ingredients.some((i) => i.nameEn.toLowerCase().includes(q) || i.nameAr.includes(q)) 
       );
     }
     return filtered;

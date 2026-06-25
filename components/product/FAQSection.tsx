@@ -19,10 +19,10 @@ export function FAQSection({ faqs }: { faqs: FAQ[] }) {
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`faq-${index}`} className="border-0 border-b border-border last:border-0">
               <AccordionTrigger className="px-5 py-4 text-right text-sm font-medium hover:no-underline hover:bg-muted/50 font-arabic">
-                {faq.questionAr}
+                {faq.question}
               </AccordionTrigger>
               <AccordionContent className="px-5 pb-4">
-                <p className="text-sm text-muted-foreground leading-relaxed font-arabic text-right">{faq.answerAr}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed font-arabic text-right">{faq.answer}</p>
               </AccordionContent>
             </AccordionItem>
           ))}

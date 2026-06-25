@@ -15,7 +15,7 @@ export function RelatedProducts({ products }: { products: Product[] }) {
             className="group rounded-xl border border-border bg-card p-3 hover:border-pharma-300 dark:hover:border-pharma-700 hover:shadow-md transition-all duration-200 text-right">
             <ImagePlaceholder productName={product.nameAr} className="aspect-[4/3] mb-3" />
             <span className={`text-xs font-semibold px-2 py-0.5 rounded-full font-arabic ${categoryColors[product.category] || ""}`}>
-              {categoryIcons[product.category]} {product.categoryLabelAr}
+              {categoryIcons[product.category]} {product.categoryLabel}
             </span>
             <p className="text-sm font-semibold text-foreground mt-2 group-hover:text-pharma-600 transition-colors line-clamp-1 font-arabic">
               {product.nameAr}

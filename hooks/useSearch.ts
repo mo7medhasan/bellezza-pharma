@@ -24,18 +24,14 @@ export function useSearch(): UseSearchReturn {
         p.nameAr.includes(q) ||
         p.category.toLowerCase().includes(q) ||
         p.categoryLabel.toLowerCase().includes(q) ||
-        p.categoryLabelAr.includes(q) ||
         p.tags.some((t) => t.toLowerCase().includes(q)) ||
-        p.tagsAr.some((t) => t.includes(q)) ||
         p.ingredients.some(
           (i) =>
             i.nameEn.toLowerCase().includes(q) ||
             i.nameAr.includes(q)
         ) ||
         p.benefits.some((b) => b.toLowerCase().includes(q)) ||
-        p.benefitsAr.some((b) => b.includes(q)) ||
-        p.shortDescription.toLowerCase().includes(q) ||
-        p.shortDescriptionAr.includes(q)
+        p.shortDescription.toLowerCase().includes(q) 
     );
   }, [query]);
 
