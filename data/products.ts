@@ -629,7 +629,7 @@ export const products: Product[] = [
         nameEn: "Bellezza VitaPro",
         image: "/products/vitapro.jpg",
         images: ["/products/vitapro.jpg"],
-        price: "150 EGP",
+        price: "170 EGP",
         category: "supplement",
         categoryLabel: "فيتامينات متعددة",
         featured: true,
